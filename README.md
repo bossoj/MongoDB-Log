@@ -1,4 +1,3 @@
 MongoDB-Log
 ===========
-
-Library for read/write logs to the MongoDB
+Library .NET for read/write logs to the MongoDB
