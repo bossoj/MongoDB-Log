@@ -1,6 +1,6 @@
 MongoDB-Log
 ===========
-Library .NET for read/write logs to the MongoDB, and UI Client(WinForms, Web) for read logs.
+Simple library .NET for read/write logs to the MongoDB, and UI Client(WinForms, Web) for read logs.
 
 Support formats log item [log4mongo-net](http://github.com/log4mongo/log4mongo-net).
 
