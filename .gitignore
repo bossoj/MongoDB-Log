@@ -5,10 +5,10 @@
 /source/*/obj/
 /source/*/*.user
 /source/*/*.suo
+/source/packages/
 /source/TestResults/
-/packages/
-/TestResults/
 /publish/
+/publish.*
 
 # Managed by NuGet
 /lib/

@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BJ.MongoDB.ClientUI", "source\BJ.MongoDB.ClientUI\BJ.MongoDB.ClientUI.csproj", "{1691CE98-C28D-4247-90C1-C311A2D83895}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BJ.MongoDB.ClientUI", "BJ.MongoDB.ClientUI\BJ.MongoDB.ClientUI.csproj", "{1691CE98-C28D-4247-90C1-C311A2D83895}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BJ.MongoDB.Logger", "source\BJ.MongoDB.Logger\BJ.MongoDB.Logger.csproj", "{4C534F44-444E-4489-8B11-881C0E00A229}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BJ.MongoDB.Logger", "BJ.MongoDB.Logger\BJ.MongoDB.Logger.csproj", "{4C534F44-444E-4489-8B11-881C0E00A229}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BJ.MongoDB.Tests", "source\BJ.MongoDB.Tests\BJ.MongoDB.Tests.csproj", "{4FDCAEC3-6E22-4775-B277-07B6A274B314}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "BJ.MongoDB.Models", "BJ.MongoDB.Models\BJ.MongoDB.Models.modelproj", "{E432567B-621C-4D37-B8FA-FA2475021898}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BJ.MongoDB.WebUI", "source\BJ.MongoDB.WebUI\BJ.MongoDB.WebUI.csproj", "{22F1E586-AA22-4928-9361-FEAD096A08A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BJ.MongoDB.Tests", "BJ.MongoDB.Tests\BJ.MongoDB.Tests.csproj", "{4FDCAEC3-6E22-4775-B277-07B6A274B314}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "BJ.MongoDB.Models", "source\BJ.MongoDB.Models\BJ.MongoDB.Models.modelproj", "{E432567B-621C-4D37-B8FA-FA2475021898}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BJ.MongoDB.WebUI", "BJ.MongoDB.WebUI\BJ.MongoDB.WebUI.csproj", "{22F1E586-AA22-4928-9361-FEAD096A08A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +27,10 @@ Global
 		{4C534F44-444E-4489-8B11-881C0E00A229}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C534F44-444E-4489-8B11-881C0E00A229}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C534F44-444E-4489-8B11-881C0E00A229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E432567B-621C-4D37-B8FA-FA2475021898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E432567B-621C-4D37-B8FA-FA2475021898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E432567B-621C-4D37-B8FA-FA2475021898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E432567B-621C-4D37-B8FA-FA2475021898}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4FDCAEC3-6E22-4775-B277-07B6A274B314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4FDCAEC3-6E22-4775-B277-07B6A274B314}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FDCAEC3-6E22-4775-B277-07B6A274B314}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,10 +39,6 @@ Global
 		{22F1E586-AA22-4928-9361-FEAD096A08A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22F1E586-AA22-4928-9361-FEAD096A08A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22F1E586-AA22-4928-9361-FEAD096A08A4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E432567B-621C-4D37-B8FA-FA2475021898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E432567B-621C-4D37-B8FA-FA2475021898}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E432567B-621C-4D37-B8FA-FA2475021898}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E432567B-621C-4D37-B8FA-FA2475021898}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
