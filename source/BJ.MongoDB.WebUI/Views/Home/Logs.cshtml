@@ -1,0 +1,185 @@
+﻿@model BJ.MongoDB.WebUI.Models.LogViewModel
+@using BJ.MongoDB.WebUI.Classes
+@using BJ.MongoDB.WebUI.Mvc
+@using PagedList.Mvc
+@using BJ.MongoDB.WebUI
+@{
+    ViewBag.Title = "Журнал";  
+}
+
+<div class="well well-sm">
+    <div class="container">
+        <h3 class="text-primary header-main">Журнал технических сообщений</h3>
+    </div>
+</div>
+
+<div class="panel panel panel-info">
+    <div class="panel-body">
+
+        @using (Html.BeginForm("Logs", "Home", FormMethod.Get, new { @id = "form-search", @class = "form-inline", @role = "form" }))
+        {
+            <div class="row">
+                <div class="form-group col-md-4">
+                    @Html.DropDownList("App", (SelectList)ViewBag.AppsName, new { @class = "form-control", @onchange = "ChangeAppList()" })
+                </div>
+                <div class="btn-group filter-group col-md-6" data-toggle="buttons">
+                    <label class="btn btn-default" id="defaultLevelCheckbox">
+                        <input type="checkbox" name="Level" value="DEBUG"><strong>DEBUG</strong>
+                    </label>
+                    <label class="btn btn-info" id="infoLevelCheckbox">
+                        <input type="checkbox" name="Level" value="INFO"><strong>INFO</strong>
+                    </label>
+                    <label class="btn btn-warning" id="warningLevelCheckbox">
+                        <input type="checkbox" name="Level" value="WARN"><strong>WARN</strong>
+                    </label>
+                    <label class="btn btn-danger" id="dangerLevelCheckbox">
+                        <input type="checkbox" name="Level" value="ERROR"><strong>ERROR</strong>
+                    </label>
+                    <label class="btn btn-danger" id="dangerLevelCheckbox">
+                        <input type="checkbox" name="Level" value="FATAL"><strong>FATAL</strong>
+                    </label>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="form-group col-md-2">
+                    @Html.TextBox("DateFrom", Html.Encode(@Model.Filters.DateFrom), new { @class = "form-control date-search-box datepicker", @autocomplete = "off", @placeholder = "с даты" })
+                </div>
+                <div class="form-group col-md-2">
+                    @Html.TextBox("DateTo", Html.Encode(@Model.Filters.DateTo), new { @class = "form-control date-search-box datepicker", @autocomplete = "off", @placeholder = "по дату" })
+                </div>
+                <div class="form-group col-md-6">
+                    @Html.TextBox("SearchStr", Html.Encode(@Model.Filters.SearchStr), new { @class = "form-control text-search-box", @placeholder = "поиск...", style = "width: 400px;" })
+                </div>
+                <div class="form-group col-md-2" style="text-align: right;">
+                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Поиск</button>
+                </div>
+            </div>
+            @Html.Hidden("OrderBy", Model.Filters.OrderBy)
+        }
+        <br>
+
+        <table class="table table">
+            <colgroup>
+                <col style="width: 10%;" />
+                <col style="width: 15%;" />
+                <col style="width: 10%;" />
+                <col style="width: 20%;" />
+                <col style="width: 5%;" />
+                <col style="width: 15%;" />
+                <col style="width: 20%;" />
+                <col style="width: 20%;" />
+            </colgroup>
+            <tr class="success">
+                <th></th>
+                @Html.TableColumnHeader(Model.Filters, "DateTime", "DateTime")
+                @Html.TableColumnHeader(Model.Filters, "Level", "Level")
+                @Html.TableColumnHeader(Model.Filters, "App", "App")
+                @Html.TableColumnHeader(Model.Filters, "Thread", "Thread")
+                @Html.TableColumnHeader(Model.Filters, "Logger", "Logger")
+                @Html.TableColumnHeader(Model.Filters, "User", "User")
+                @Html.TableColumnHeader(Model.Filters, "Machine", "Machine")
+            </tr>
+
+            @foreach (var item in Model.Entries)
+            {
+                <tr @Html.TegTR(item.level)>
+                    <td>@Html.ActionLink("Просмотр", "Details", new { id = item.Id.ToString(), ReturnUrl = Request.RawUrl })</td>
+                    <td>@Html.DisplayFor(modelItem => item.timestamp.AsLocalTime)</td>
+                    <td>@Html.SpanLevel(item.level)</td>
+                    <td>@Html.DisplayFor(modelItem => item.domain)</td>
+                    <td>@Html.DisplayFor(modelItem => item.thread)</td>
+                    <td>@Html.DisplayFor(modelItem => item.loggerName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.userName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.machineName)</td>
+                </tr>
+            }
+        </table>
+
+        <div style="text-align: center;">
+            @Html.PagedListPager(Model.Entries,
+                page => Url.Action("Logs", new
+                {
+                    Page = page,
+                    DateFrom = Model.Filters.DateFrom,
+                    DateTo = Model.Filters.DateTo,
+                    SearchStr = Model.Filters.SearchStr,
+                    OrderBy = Model.Filters.OrderBy,
+                    App = Model.Filters.App
+                }) + "&" + String.Join("&", Model.Filters.Level.Select(x => "Level=" + x))
+                ,
+                new PagedListRenderOptions
+                {
+                    LinkToFirstPageFormat = "<<",
+                    LinkToPreviousPageFormat = "Назад",
+                    LinkToNextPageFormat = "Вперед",
+                    LinkToLastPageFormat = ">>"
+                })
+        </div>
+    </div>
+</div>
+
+@section scripts{
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#SearchStr").tokenfield();
+
+        $('.datepicker').datepicker(
+        {
+            format: "dd/mm/yyyy",
+            language: 'ru',
+            weekStart: 1,
+            autoclose: true,
+            todayBtn: "linked",
+            todayHighlight: true,
+        });
+
+        SetLevelCheckbox();
+    });
+
+    function ChangeAppList() {
+        $("#form-search").submit();
+    }
+
+    function SetLevelCheckbox() {
+
+        @if(Model.Filters.Level.Contains("DEBUG"))
+        {
+        <text>
+        $("#defaultLevelCheckbox").addClass('active');
+        $("#defaultLevelCheckbox input").attr('checked', true);
+        </text>
+        }
+        @if (Model.Filters.Level.Contains("INFO"))
+        {
+        <text>
+        $("#infoLevelCheckbox").addClass('active');
+        $("#infoLevelCheckbox input").attr('checked', true);
+        </text>
+        }
+        @if (Model.Filters.Level.Contains("WARN"))
+        {
+        <text>
+        $("#warningLevelCheckbox").addClass('active');
+        $("#warningLevelCheckbox input").attr('checked', true);
+        </text>
+        }
+        @if (Model.Filters.Level.Contains("ERROR"))
+        {
+        <text>
+        $("#dangerLevelCheckbox").addClass('active');
+        $("#dangerLevelCheckbox input").attr('checked', true);
+        </text>
+        }
+        @if (Model.Filters.Level.Contains("FATAL"))
+        {
+        <text>
+        $("#dangerLevelCheckbox").addClass('active');
+        $("#dangerLevelCheckbox input").attr('checked', true);
+        </text>
+        }                        
+    }
+
+</script>
+}

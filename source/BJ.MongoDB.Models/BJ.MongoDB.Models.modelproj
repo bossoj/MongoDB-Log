@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{e432567b-621c-4d37-b8fa-fa2475021898}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>BJ.MongoDB.Models</Name>
+    <RootNamespace>BJ.MongoDB.Models</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="ModelDefinition\Package1_0000.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2355.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2356.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_0000.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2355.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2356.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2355.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2356.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_2355.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_2355.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_2355.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package7_2355.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package8_2355.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0000.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2355.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2356.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2358.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2359.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagram.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagrams\HomeController_Details.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagrams\HomeController_Details.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagrams\HomeController_Details.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagrams\HomeController_Index.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagrams\HomeController_Index.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagrams\HomeController_Index.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagrams\HomeController_Logs.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagrams\HomeController_Logs.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagrams\HomeController_Logs.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagrams\HomeController_Stat.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagrams\HomeController_Stat.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagrams\HomeController_Stat.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLClassDiagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLClassDiagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLClassDiagram.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="UMLComponentDiagram.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLComponentDiagram.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLComponentDiagram.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="UMLUseCaseDiagram.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLUseCaseDiagram.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLUseCaseDiagram.usecasediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\BJ.MongoDB.Models.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="UMLSequenceDiagrams" />
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="LayerDiagram.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="LayerDiagram.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagram.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="LayerDiagram.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagram.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BJ.MongoDB.ClientUI\BJ.MongoDB.ClientUI.csproj">
+      <Name>BJ.MongoDB.ClientUI</Name>
+      <Project>{1691ce98-c28d-4247-90c1-c311a2d83895}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\BJ.MongoDB.Logger\BJ.MongoDB.Logger.csproj">
+      <Name>BJ.MongoDB.Logger</Name>
+      <Project>{4c534f44-444e-4489-8b11-881c0e00a229}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\BJ.MongoDB.WebUI\BJ.MongoDB.WebUI.csproj">
+      <Name>BJ.MongoDB.WebUI</Name>
+      <Project>{22f1e586-aa22-4928-9361-fead096a08a4}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

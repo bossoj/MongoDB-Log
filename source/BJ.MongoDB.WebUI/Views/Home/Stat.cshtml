@@ -1,0 +1,78 @@
+﻿@using System.Collections.Generic
+@using BJ.MongoDB.Logger;
+@using BJ.MongoDB.WebUI.Models
+@model StatViewModel
+@{
+    ViewBag.Title = "Статистика";
+}
+
+<div class="well well-sm">
+    <div class="container">
+        <h3 class="text-primary header-main">Статистика</h3>
+    </div>
+</div>
+
+<ul class="nav nav-pills" id="main-tabs">
+    <li class="active"><a href="#level">Уровни</a></li>
+    <li><a href="#app">Приложения</a></li>
+    @*  <li><a href="#os">ОС</a></li>
+  <li><a href="#time">Время</a></li>*@
+</ul>
+<br>
+<div class="tab-content">
+    
+    <div class="tab-pane active" id="level">
+        <div class="panel panel-info">
+            <div class="panel-heading filter-group">Статистика по уровням</div>
+            <div class="panel-body">
+                @Html.Partial(@"Partal\_PartialStatLevel")
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane" id="app">
+        <div class="panel panel-info"> 
+            <div class="panel-heading filter-group">Статистика по приложениям</div> 
+            <div class="panel-body"> 
+                @Html.Partial(@"Partal\_PartialStatApp")
+            </div>
+        </div>
+    </div>
+
+    @*    <div class="tab-pane" id="os">
+          <div class="panel panel-info">
+              <div class="panel-heading filter-group">Статистика по ОС</div>
+              <div class="panel-body">
+                  @Html.Partial(@"Partal\_PartialStatOS")
+              </div>
+          </div>
+      </div>
+
+      <div class="tab-pane" id="time">
+        <div class="panel panel-info">
+          <div class="panel-heading filter-group">Статистика по времени</div>
+          <div class="panel-body">
+              @Html.Partial(@"Partal\_PartialStatTime")
+         </div>
+      </div>
+    </div>*@
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            // active stat tabs
+            $('#main-tabs a').click(function(e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+        });
+
+        function ChangeAppList() {
+            $("#form-search").submit();
+        }
+
+    </script>
+}
+

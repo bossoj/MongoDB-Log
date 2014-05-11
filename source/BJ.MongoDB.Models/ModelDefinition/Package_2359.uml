@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="1bb8d9cc-e095-4f02-96fc-168cdae781b7"
+  name="PagedList"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="a210b445-d381-4243-ab25-361deac6b9dd"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DPagedList"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="84cb4a73-e1e2-47bc-b9c5-1b06422bf5e1"
+        name="IPagedList&lt;LogItem‎&gt;"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f734257b-9058-49dc-8676-c9c5f8817f66"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="67a6d347-6c2f-4117-9dbb-b72d5d41a036">
+                <propertyInstance
+                  Id="e6e46484-2eac-4271-bcd0-383861365aea"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6280e807-f15f-4902-9f0a-47662d7a18ca">
+                <propertyInstance
+                  Id="487f53b8-20e4-4a2a-a99c-1701447d933d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2a087255-5ac6-4a46-a603-be09a69ca770">
+                <propertyInstance
+                  Id="c142be6b-0536-4066-b647-29eee6fdee1d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="55ec6a7d-725f-4e56-8668-d3717c69126b">
+                <propertyInstance
+                  Id="28c4c82f-6fd7-47f5-9013-c147039e5aeb"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="4acb1266-48de-42cd-94c0-be462a500baf">
+            <redefinableTemplateSignatureMoniker
+              Id="de55d8e8-382d-4d78-8fb0-7e477bc355d5"
+              LastKnownLocation="Package_2359.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="6cc69f5b-d819-499b-b54d-9a0d09b4d1d6">
+                  <actuals>
+                    <classMoniker
+                      Id="aecdc182-be8b-44b4-8f45-f2a129899551"
+                      LastKnownName="LogItem"
+                      LastKnownLocation="Package4_2355.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="b7af0d18-29a0-4ad8-aec5-d0c8ef89f2ed"
+                      LastKnownLocation="Package_2359.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+        <generalsInternal>
+          <generalization
+            Id="b177949b-e2c0-4e13-9819-b36d9db647b7"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="1d653fd8-a251-4c17-ac4b-2935eb05eafc"
+              LastKnownName="IEnumerable&lt;LogItem‎&gt;"
+              LastKnownLocation="Package7_2355.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a5ffebc7-9223-482f-a2b7-65016bf11441"
+        name="IPagedList"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="358fb670-14fb-4ec6-a960-309938ad6f28"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2Fpackages%2FPagedList.1.17.0.0%2Flib%2Fnet40%2FPagedList.dll Namespace%3DPagedList Type%3D(Name%3DIPagedList GenericParameterCount%3D1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c077cfbb-f921-42ee-a9e8-d815cf3cd9ec"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="877ca196-2777-4441-9d2c-5a3b5fae87aa">
+                <propertyInstance
+                  Id="a39d032e-2906-4659-8f9a-10c9b0020ac4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a7f4ebb9-0eec-4fce-97b6-dc960741fa27">
+                <propertyInstance
+                  Id="4d3b0d8f-92de-4545-b947-41c8bfdb8cfd"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9065b1dc-74b4-436b-b81d-50e338f84bfe">
+                <propertyInstance
+                  Id="0c13aa16-b016-4cc3-98fd-b61d46984648"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8ffc92bb-ab95-4eef-b4fd-6b437fffca12">
+                <propertyInstance
+                  Id="ab35d91c-7bb3-4f2e-93dc-adc5f38ceae9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="de55d8e8-382d-4d78-8fb0-7e477bc355d5"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="b7af0d18-29a0-4ad8-aec5-d0c8ef89f2ed">
+                <referencesInternal>
+                  <reference
+                    Id="ae0d79dc-e4b2-47ce-92a5-201b94f995e7"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2Fpackages%2FPagedList.1.17.0.0%2Flib%2Fnet40%2FPagedList.dll Namespace%3DPagedList Type%3D(Name%3DIPagedList GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="074e5c8f-01c5-41cc-9752-aa4ff02f5374"
+                    name="T"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

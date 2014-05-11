@@ -1,9 +1,14 @@
 # Visual Studio stuff
-/src/*.user
-/src/*.suo
-/src/*/bin/
-/src/*/obj/
-/src/*/*.user
+/source/*.user
+/source/*.suo
+/source/*/bin/
+/source/*/obj/
+/source/*/*.user
+/source/*/*.suo
+/source/TestResults/
+/packages/
+/TestResults/
+/publish/
 
 # Managed by NuGet
 /lib/

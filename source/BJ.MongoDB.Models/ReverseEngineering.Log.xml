@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2013-12-07T22:48:43" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2013-12-07T22:48:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BJ.MongoDB.Models::BJ' -  (Package)" />
+  <Message Timestamp="2013-12-07T22:48:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BJ.MongoDB.Models::BJ::MongoDB' -  (Package)" />
+  <Message Timestamp="2013-12-07T22:48:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BJ.MongoDB.Models::BJ::MongoDB::WebUI' -  (Package)" />
+  <Message Timestamp="2013-12-07T22:48:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BJ.MongoDB.Models::BJ::MongoDB::WebUI::Models' -  (Package)" />
+  <Message Timestamp="2013-12-07T22:48:44" Importance="Medium" Text="Element reverse engineered into the UML model: 'BJ.MongoDB.Models::BJ::MongoDB::WebUI::Models::StatLevel' -  (Class)" />
+  <Message Timestamp="2013-12-07T22:48:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BJ.MongoDB.Models::BJ::MongoDB::WebUI::Models::StatLevel::_stat' -  (Property)" />
+  <Message Timestamp="2013-12-07T22:48:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BJ.MongoDB.Models::BJ::MongoDB::WebUI::Models::StatLevel::Result' -  (Property)" />
+  <Message Timestamp="2013-12-07T22:48:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BJ.MongoDB.Models::BJ::MongoDB::WebUI::Models::StatLevel::StatLevel' -  (Operation)" />
+  <Message Timestamp="2013-12-07T22:48:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BJ.MongoDB.Models::BJ::MongoDB::WebUI::Models::StatLevelItem' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-12-07T22:48:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BJ.MongoDB.Models::System' -  (Package)" />
+  <Message Timestamp="2013-12-07T22:48:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BJ.MongoDB.Models::System::Collections' -  (Package)" />
+  <Message Timestamp="2013-12-07T22:48:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BJ.MongoDB.Models::System::Collections::Generic' -  (Package)" />
+  <Message Timestamp="2013-12-07T22:48:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BJ.MongoDB.Models::System::Collections::Generic::List' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-12-07T22:48:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BJ.MongoDB.Models::System::Collections::Generic::List&lt;StatLevelItem‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-12-07T22:48:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'd75ba9ba-e079-4af1-9fb3-a24c70891a01' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2013-12-07T22:48:44" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: BJ.MongoDB.Models::BJ::MongoDB::WebUI::Models::StatLevel to BJ.MongoDB.Models::System::Collections::Generic::List&lt;StatLevelItem‎&gt; (Association)" />
+  <Message Timestamp="2013-12-07T22:48:44" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2013-12-07T22:48:44" Importance="High" Text="(3) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2013-12-07T22:48:44" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>

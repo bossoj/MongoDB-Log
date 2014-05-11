@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="41334f13-f9a1-4503-9fb8-586716cd041c"
+  name="Driver"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="98a11b54-e635-4de0-ae8c-eee391e6b2c8"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMongoDB.Driver"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="075158ab-d6b1-42ec-9f6b-e0f2e227ce77"
+        name="MongoDatabase"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="4021af97-44ca-4ce7-8e3a-6951137d58cb"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2Fpackages%2Fmongocsharpdriver.1.8.2%2Flib%2Fnet35%2FMongoDB.Driver.dll Namespace%3DMongoDB.Driver Type%3DMongoDatabase"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="85f6bbc9-e489-4dc1-a0a2-b52257fbc50b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="360734cc-9f7c-49fc-ac06-05c62f4d66b8">
+                <propertyInstance
+                  Id="e5bb6058-d2cc-4755-925b-a82b2507dcfe"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="aded43d3-0086-4937-a5ca-392ab0c29ff1">
+                <propertyInstance
+                  Id="137a62b4-6baa-4adf-a40c-b8034a278063"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="82b822b0-7f8c-40cc-bc21-f69d0d850fe6">
+                <propertyInstance
+                  Id="c9a80a7d-dfd5-49cb-8e7f-84079e72e4c2"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="871b4208-0175-4b3e-b7fc-2b81a6d2485f">
+                <propertyInstance
+                  Id="125a72fe-6577-47d5-9b93-9f9138db5afa"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f47b6a16-0b89-4c8e-bad1-f0b5b78b5cf7">
+                <propertyInstance
+                  Id="4e0e0ef6-a4f8-4920-a557-722bf03c2c6b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c9931e04-6f36-47e8-8a19-704663018c9f"
+        name="MongoCollection&lt;LogItem‎&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="186dfa03-d3c8-4024-b3aa-85ad0f593fc8"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5e7060b4-f61b-41fb-8604-152a31dba075">
+                <propertyInstance
+                  Id="035c5d4c-bbf1-4315-b84e-a8f079060acf"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="02823da8-8c75-4275-808a-973518165deb">
+                <propertyInstance
+                  Id="56b35c31-634d-4557-8a5a-9a18cdd5d4f0"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="af715951-7c81-4ca6-8298-b12dd30ec562">
+                <propertyInstance
+                  Id="e64848e1-d36a-4a8e-95ec-bf460e460793"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="58c4f864-78aa-40df-a205-03c24027b0e1">
+                <propertyInstance
+                  Id="8dd6f032-9134-4422-8825-241d9f8b13cf"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4cc0197d-ff9c-422d-a346-4dcca7fd5aa9">
+                <propertyInstance
+                  Id="7a3d9e69-e515-4279-a706-b5aceb20e777"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="0fc9e1b2-6cae-4397-8d04-5666dba71b8a">
+            <redefinableTemplateSignatureMoniker
+              Id="ac3241ce-3b0f-4e69-b60a-c7f911508c17"
+              LastKnownLocation="Package_2358.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="d73bbda8-2cc3-42a6-872b-f91a9739ecea">
+                  <actuals>
+                    <classMoniker
+                      Id="aecdc182-be8b-44b4-8f45-f2a129899551"
+                      LastKnownName="LogItem"
+                      LastKnownLocation="Package4_2355.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="2a39368f-089a-44b3-9a42-fec6b9a00abb"
+                      LastKnownLocation="Package_2358.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5fd28f52-4902-456b-ac9b-a2ad147087df"
+        name="MongoCollection"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="8a3cc7ed-9577-4069-8f41-d3ef09e614a2"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2Fpackages%2Fmongocsharpdriver.1.8.2%2Flib%2Fnet35%2FMongoDB.Driver.dll Namespace%3DMongoDB.Driver Type%3D(Name%3DMongoCollection GenericParameterCount%3D1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2b3f6de2-7b85-4387-bc9a-15866e29a6e4"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dbe24526-41cd-492c-a0b5-6e79cc150743">
+                <propertyInstance
+                  Id="71a4c778-4d3b-4a0a-a386-3e47febde3cb"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c0a721e3-7b6f-4aeb-81ba-ca7113df8c0a">
+                <propertyInstance
+                  Id="0fa533ab-b33e-46e4-9675-59451b7f4176"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="386898e3-c980-4bf6-9137-07207a0e0f04">
+                <propertyInstance
+                  Id="2ecb8a31-cc30-4585-97c8-c0852d3aaf6c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8b6c236d-3c7b-40f9-8076-6cc6208bfc3d">
+                <propertyInstance
+                  Id="cef1c64e-30ca-4fe8-a000-740eaa055ece"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b466f17a-5265-449f-a6be-8ba0d67f7bf0">
+                <propertyInstance
+                  Id="29d6f8cb-f997-4d9e-9903-6c9148d8dc0a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="ac3241ce-3b0f-4e69-b60a-c7f911508c17"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="2a39368f-089a-44b3-9a42-fec6b9a00abb">
+                <referencesInternal>
+                  <reference
+                    Id="7e77b8db-52b2-4e9b-9153-f0e3ccfc0f18"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2Fpackages%2Fmongocsharpdriver.1.8.2%2Flib%2Fnet35%2FMongoDB.Driver.dll Namespace%3DMongoDB.Driver Type%3D(Name%3DMongoCollection GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="0f7992eb-a276-423e-83cd-b18e379e5298"
+                    name="TDefaultDocument"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

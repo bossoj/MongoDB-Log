@@ -1,0 +1,37 @@
+﻿@using BJ.MongoDB.WebUI.Mvc
+@using BJ.MongoDB.WebUI.Models;
+@using BJ.MongoDB.Logger;
+@model StatViewModel
+
+<table class="table">
+    <colgroup> 
+        <col style="width: 40%;" />
+        <col style="width: 10%;" />
+        <col style="width: 10%;" />
+        <col style="width: 10%;" />
+        <col style="width: 10%;" />
+        <col style="width: 10%;" />
+        <col style="width: 10%;" />
+    </colgroup> 
+    <tr class="success">
+        <th>OC</th>
+        <th><span class="label label-default">DEBUG</span></th>
+        <th><span class="label label-info">INFO</span></th>
+        <th><span class="label label-warning">WARN</span></th>
+        <th><span class="label label-danger">ERROR</span></th>
+        <th><span class="label label-danger">FATAL</span></th>
+        <th>Все</th>
+    </tr>
+    @foreach (var item in Model.StatLevel.Result)
+    {
+    <tr>
+        <td class="appname-table">@item.AppName</td>
+        <td>@Html.CellCountText(item.Debug, LevelType.DEBUG)</td>
+        <td>@Html.CellCountText(item.Info, LevelType.INFO)</td>
+        <td>@Html.CellCountText(item.Warn, LevelType.WARN)</td>
+        <td>@Html.CellCountText(item.Error, LevelType.ERROR)</td>
+        <td>@Html.CellCountText(item.Fatal, LevelType.ERROR)</td>
+        <td>@Html.CellCountText(item.Total)</td>
+    </tr>
+    }
+</table>

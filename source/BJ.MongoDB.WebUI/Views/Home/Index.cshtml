@@ -1,0 +1,33 @@
+﻿@using System.Collections.Generic
+@using BJ.MongoDB.WebUI
+@using BJ.MongoDB.WebUI.Classes
+@using BJ.MongoDB.WebUI.Mvc
+@model IDictionary<string, string>
+@{
+    ViewBag.Title = "Главная";
+}
+
+<div class="well well-sm">
+    <div class="container">
+        <h3 class="text-primary header-main">Веб-приложение для просмотра журнала событий</h3>
+    </div>
+</div>
+
+<div class="panel panel-info group-main">
+  <div class="panel-heading"><strong>Ведется журнал работы следующих программ</strong></div>
+</div>
+
+<ul class="list-group group-main">
+@foreach(var key in Model.Keys)
+{
+    <li class="list-group-item appname-table">
+        @Html.LinkApp(key)
+        <span class="label label-primary lable-badge" style="float: right;">@Model[key]</span>    
+    </li>
+}
+    <li class="list-group-item active">
+    <span class="badge">@ViewBag.TotalCount</span>
+    Итого
+    </li>
+</ul>
+

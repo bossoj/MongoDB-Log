@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="f6108af0-18d2-4dad-8981-a119a13f6fb2" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <comments>
+    <comment Id="c7d6d092-dccb-49a0-992b-eccc3d02f33c" name="Comment1">
+      <body>NoSQL 
+MongoDB
+</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="582029a4-1ee7-4f3c-995e-8f2894cd698f" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="ca0d3600-ad63-42af-a709-cb84b82ac256" name="Comment2">
+      <body>ASP.NET MVC
+</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="f2b1bf8c-4f63-4727-8609-c9dfc12b701a" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="9ce43c18-a1cf-4cc9-ba87-28a9bcd0cd65" name="Comment3">
+      <body>WinForms</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="eb77afc1-019a-4a06-8d33-14dd26e2a05b" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="09e6642f-6311-4a80-a50f-dd52503c9f15" name="Comment4">
+      <body>log4net
+
+</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="c9ae2f77-2148-4209-a3d3-c22175d91b46" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+  </comments>
+  <layers>
+    <layer Id="f2b1bf8c-4f63-4727-8609-c9dfc12b701a" name="Web UI Layer&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="6f33b9a1-0528-4799-b901-28133c087b65" direction="Forward">
+          <layerMoniker Id="ceb35ff9-d99c-4d72-bae0-ca0fb4556fd8" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="bb560fb9-d3ae-4c0a-83fb-71da88b871e2" direction="Forward">
+          <layerMoniker Id="be4219f2-c11e-4ad1-a164-74882095a7aa" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="d4fcabbc-5e58-44a3-bb14-07503b5988de" name="HomeController">
+          <references>
+            <reference Id="3aa2e54b-36fa-4fcc-abe3-4f1122ef1109" name="HomeController">
+              <ArtifactNode Label="HomeController" Category="CodeSchema_Class" Id="(Assembly=../BJ.MongoDB.WebUI/bin/BJ.MongoDB.WebUI.dll Namespace=BJ.MongoDB.WebUI.Controllers Type=HomeController)" />
+              <ExpandedNode Id="(Assembly=BJ.MongoDB.WebUI Namespace=BJ.MongoDB.WebUI.Controllers Type=HomeController)" Label="HomeController" Category="CodeSchema_Class">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="ceb35ff9-d99c-4d72-bae0-ca0fb4556fd8" name="Domain Model Layer&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="d79084c8-fca5-4e88-9967-e22ca6a35cc5" direction="Forward">
+          <layerMoniker Id="582029a4-1ee7-4f3c-995e-8f2894cd698f" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="0a756ed7-0b5c-4005-a113-61f9f1adec03" direction="Forward">
+          <layerMoniker Id="be4219f2-c11e-4ad1-a164-74882095a7aa" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="182f320b-14a1-44a1-bc0c-704fc2696de5" direction="Forward">
+          <layerMoniker Id="f42ba239-872b-44f2-907c-fffc57e68bf6" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="30af1b03-b116-4724-a979-23401859cb05" name="LogViewModel">
+          <references>
+            <reference Id="43f86b7f-2948-41dd-928e-66cdc559805e" name="LogViewModel">
+              <ArtifactNode Label="LogViewModel" Category="CodeSchema_Class" Id="(Assembly=../BJ.MongoDB.WebUI/bin/BJ.MongoDB.WebUI.dll Namespace=BJ.MongoDB.WebUI.Models Type=LogViewModel)" />
+              <ExpandedNode Id="(Assembly=BJ.MongoDB.WebUI Namespace=BJ.MongoDB.WebUI.Models Type=LogViewModel)" Label="LogViewModel" Category="CodeSchema_Class">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="398bb93f-68e7-45ee-9df2-4e117396a64e" name="LogItemViewModel">
+          <references>
+            <reference Id="91240e4f-5814-46bc-907f-f9a0c9502b09" name="LogItemViewModel">
+              <ArtifactNode Label="LogItemViewModel" Category="CodeSchema_Class" Id="(Assembly=../BJ.MongoDB.WebUI/bin/BJ.MongoDB.WebUI.dll Namespace=BJ.MongoDB.WebUI.Models Type=LogItemViewModel)" />
+              <ExpandedNode Id="(Assembly=BJ.MongoDB.WebUI Namespace=BJ.MongoDB.WebUI.Models Type=LogItemViewModel)" Label="LogItemViewModel" Category="CodeSchema_Class">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="ae3ae5fb-c04e-4bbf-905f-a2d50f1b3682" name="StatAppItem">
+          <references>
+            <reference Id="a11cf10b-8f4f-49b7-8210-78fdff137f2a" name="StatAppItem">
+              <ArtifactNode Label="StatAppItem" Category="CodeSchema_Class" Id="(Assembly=../BJ.MongoDB.WebUI/bin/BJ.MongoDB.WebUI.dll Namespace=BJ.MongoDB.WebUI.Models Type=StatAppItem)" />
+              <ExpandedNode Id="(Assembly=BJ.MongoDB.WebUI Namespace=BJ.MongoDB.WebUI.Models Type=StatAppItem)" Label="StatAppItem" Category="CodeSchema_Class">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="90243576-f071-4016-b9c4-82c77d66da5d" name="StatLevelItem">
+          <references>
+            <reference Id="4943c2ab-8462-47a5-ae39-2fe4da2e66ca" name="StatLevelItem">
+              <ArtifactNode Label="StatLevelItem" Category="CodeSchema_Class" Id="(Assembly=../BJ.MongoDB.WebUI/bin/BJ.MongoDB.WebUI.dll Namespace=BJ.MongoDB.WebUI.Models Type=StatLevelItem)" />
+              <ExpandedNode Id="(Assembly=BJ.MongoDB.WebUI Namespace=BJ.MongoDB.WebUI.Models Type=StatLevelItem)" Label="StatLevelItem" Category="CodeSchema_Class">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="d67e7767-a7da-482e-978c-b553f7586193" name="Service Facade">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="b9240eda-d607-4a28-9f1e-d7fa626ea205" direction="Forward">
+              <layerMoniker Id="398bb93f-68e7-45ee-9df2-4e117396a64e" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="0a82f43d-f0d7-4b5c-bb27-da99421fc287" direction="Forward">
+              <layerMoniker Id="ae3ae5fb-c04e-4bbf-905f-a2d50f1b3682" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="40abac63-6021-4553-89ee-5ae05731919c" direction="Forward">
+              <layerMoniker Id="90243576-f071-4016-b9c4-82c77d66da5d" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="30c5daee-180e-4307-a0f6-b52d5c560b9d" direction="Forward">
+              <layerMoniker Id="30af1b03-b116-4724-a979-23401859cb05" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <childLayers>
+            <layer Id="d86db78d-d435-4a0f-96c0-4b207dbbac68" name="LogService">
+              <references>
+                <reference Id="fe4c2320-2d91-4527-a2d2-2ba023c00733" name="LogService">
+                  <ArtifactNode Label="LogService" Category="CodeSchema_Class" Id="(Assembly=../BJ.MongoDB.WebUI/bin/BJ.MongoDB.WebUI.dll Namespace=BJ.MongoDB.WebUI.Classes Type=LogService)" />
+                  <ExpandedNode Id="(Assembly=BJ.MongoDB.WebUI Namespace=BJ.MongoDB.WebUI.Classes Type=LogService)" Label="LogService" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                </reference>
+              </references>
+            </layer>
+          </childLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="582029a4-1ee7-4f3c-995e-8f2894cd698f" name="Data Access Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="26335cda-a156-44be-9afb-8eeafceb9612" direction="Forward">
+          <layerMoniker Id="be4219f2-c11e-4ad1-a164-74882095a7aa" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="192daa1a-c519-4c9f-9429-0d8c7620aa23" direction="Forward">
+          <layerMoniker Id="f42ba239-872b-44f2-907c-fffc57e68bf6" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="7fb2eca3-7bbc-4042-bd42-c2aed78e006b" name="Logger">
+          <references>
+            <reference Id="8668b442-d100-400a-a06a-630c2dab4f89" name="Logger">
+              <ArtifactNode Label="Logger" Category="CodeSchema_Class" Id="(Assembly=../BJ.MongoDB.Logger/bin/Debug/BJ.MongoDB.Logger.dll Namespace=BJ.MongoDB.Logger Type=Logger)" />
+              <ExpandedNode Id="(Assembly=BJ.MongoDB.Logger Namespace=BJ.MongoDB.Logger Type=Logger)" Label="Logger" Category="CodeSchema_Class">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="be4219f2-c11e-4ad1-a164-74882095a7aa" name="Management&#xD;&#xA;">
+      <childLayers>
+        <layer Id="6cffb9f2-7cff-4ba4-88b7-6ddbc4625fa7" name="App Config&#xD;&#xA;" />
+        <layer Id="c9ae2f77-2148-4209-a3d3-c22175d91b46" name="Logging" />
+        <layer Id="9768ae83-680b-4966-adc2-1842eb993774" name="Exception&#xD;&#xA;Handling" />
+      </childLayers>
+    </layer>
+    <layer Id="eb77afc1-019a-4a06-8d33-14dd26e2a05b" name="Windows UI Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="95de8028-3110-4adc-90ce-40ac1b799880" direction="Forward">
+          <layerMoniker Id="f42ba239-872b-44f2-907c-fffc57e68bf6" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="4836e5c4-8e92-4e2e-9035-f025f7f3d6d3" direction="Forward">
+          <layerMoniker Id="582029a4-1ee7-4f3c-995e-8f2894cd698f" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="811ea7c4-115f-44c2-b4ee-a5f27e45b0c0" name="frmLogs">
+          <references>
+            <reference Id="ecf0641b-2b0f-4c45-90a0-739dae53ab8a" name="frmLogs">
+              <ArtifactNode Label="frmLogs" Category="CodeSchema_Class" Id="(Assembly=../BJ.MongoDB.ClientUI/bin/Debug/BJ.MongoDB.ClientUI.exe Namespace=BJ.MongoDB.ClientUI Type=frmLogs)" />
+              <ExpandedNode Id="(Assembly=BJ.MongoDB.ClientUI Namespace=BJ.MongoDB.ClientUI Type=frmLogs)" Label="frmLogs" Category="CodeSchema_Class">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="f42ba239-872b-44f2-907c-fffc57e68bf6" name="Security">
+      <childLayers>
+        <layer Id="ee804d03-2651-4f08-8331-f5152e150683" name="Authentication" />
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>

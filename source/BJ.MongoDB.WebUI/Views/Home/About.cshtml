@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "О программе";
+}
+
+<div class="well well-sm">
+    <div class="container">
+        <h3 class="text-primary header-main">О программе</h3>
+    </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-body about-group">
+    <p><strong>@ViewBag.AsmTitle </strong></p>
+    <p>@ViewBag.Version</p>
+    <p>@ViewBag.Copyright <a href="mailto:@ViewBag.Company?Subject=@ViewBag.AsmTitle. @ViewBag.Version" >@ViewBag.Company</a></p>
+    <p><a href="http://github.com/bossoj/MongoDB-Log">GitHub project</a></p>
+  </div>
+</div>

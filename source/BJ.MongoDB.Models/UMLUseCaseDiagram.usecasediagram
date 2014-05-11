@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="0fc9cb18-ce4e-445c-b3bb-66e1beecea3c" name="UMLUseCaseDiagram" linkedPackageId="06991a58-06ce-4d16-a903-af05b38dc164" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="eca7873e-2689-4631-8bfc-297816f8dfd9" name="Logs Viewer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6cc41c85-938d-48a0-bdbe-56dc3c1a40b6" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="64d51232-c6ca-4dce-8f4e-a9af45015e11" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9704a85b-e5b1-4eaf-a614-62b4e2f8034f" />
+        <targetEnds>
+          <association Id="9ad58a11-9285-446f-8517-46d35f16c699" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Просмотр  информации о приложениях " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="04b49565-da67-432c-bfc2-0858f88b3172" LastKnownName="Просмотр  информации о приложениях " />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e4211741-ee2a-4352-9445-3c3536866b34" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3fbf8f8b-6144-4293-8e0a-14f32e37c883" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9b069b75-356e-47f0-9c2d-f55a535fbcaf" name="Просмотр  информации о приложениях " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7adb05e8-0a59-4230-86a3-7ac6c42d4310" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a2e87aed-9381-42bf-b7e3-5178c663825b" />
+          </association>
+          <association Id="ac5b1bc9-0f82-49aa-af80-b448ca8293bd" isDerived="false" sourceEndRoleName="User" targetEndRoleName="User" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="64d51232-c6ca-4dce-8f4e-a9af45015e11" LastKnownName="User" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8fcd5a48-56f5-4697-b50a-7315ac6c9265" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a1d840ab-7d3a-420a-8578-9c60d461bd8a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="12a1211d-1886-4ede-bcfe-839f60e78a4c" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="18343c58-d03c-4535-a1c7-2879ecc402ee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c80a4b4b-59b2-4f4c-ae25-7d5fed2c1ffe" />
+          </association>
+          <association Id="0936ee82-a757-4ac5-b4c6-f4fa91b832b5" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Просмотр журнала  сообщений" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1f8b98d7-cff8-4988-aa45-b6ecd56acdb0" LastKnownName="Просмотр журнала  сообщений" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a221be96-f030-459c-9521-715f8f57122b" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="65316e28-1747-40d6-87fb-aeed9da21167" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c9479c7a-aa29-442f-82a2-a928db9cb451" name="Просмотр журнала  сообщений" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bc3a76b0-cea1-4e91-addd-b69df2d928dd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="80bdb505-f443-479f-9797-ee2b4117ddb6" />
+          </association>
+          <association Id="f4d55e37-eca0-4f6c-a7cd-85778c07903b" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Просмотр деталей сообщения" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="58c2c668-96d5-43cb-9006-ae96025c594c" LastKnownName="Просмотр деталей сообщения" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2f0906e3-f928-461b-b608-58fad1ec2085" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="06317f82-31cf-46f4-8570-85c473efb90e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3085d202-4707-44ea-9c7e-5bfb9f46e6a1" name="Просмотр деталей сообщения" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3ccd7222-f718-42c1-9a04-de135e262507" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="53811bbf-14b6-45cf-ae3b-a37f968ca7d2" />
+          </association>
+          <association Id="255ee5d1-8115-4315-b77e-89285c1ea072" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Просмотр стасистики по приложениям" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8f406af6-34c0-43cb-ac93-84b72477978c" LastKnownName="Просмотр стасистики по приложениям" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="63f97079-09cc-4a32-a1eb-9161ced8c2bd" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3ffa07e3-fb2c-4ab7-9f5e-d10dae57d1ba" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="59348050-83a2-4e16-afca-74d9bbd418f1" name="Просмотр стасистики по приложениям" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a4f7be48-1dee-4fe9-8c34-4185f4c07a7d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4ccbd261-51bb-4351-bc35-2c13bb755735" />
+          </association>
+          <association Id="ff63aa85-de5c-4a63-adaa-c7eb27025121" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Просмотр стасистики уровням " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b6a05e54-b455-444b-8d8b-b3075eb508d4" LastKnownName="Просмотр стасистики уровням " />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c52c82fa-1d86-4620-94cf-dd1fac9b37f7" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c11dbda7-3f24-4c75-91eb-33a7a5d46612" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="06b3eeae-e481-4bac-a09c-cd6e3bc98882" name="Просмотр стасистики уровням " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8a8cb437-a726-4dd2-b851-0dd7e8a01a1b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2743a8f9-e259-45df-8e8a-9cc4298c9d1d" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="04b49565-da67-432c-bfc2-0858f88b3172" name="Просмотр  информации о приложениях " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3e52e1bf-e763-443a-91e7-ad76da012c0a" />
+        <subjects>
+          <subsystemMoniker Id="eca7873e-2689-4631-8bfc-297816f8dfd9" LastKnownName="Logs Viewer" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="1f8b98d7-cff8-4988-aa45-b6ecd56acdb0" name="Просмотр журнала  сообщений" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="25471f57-6b5b-4da9-a774-291a4d98254a" />
+        <subjects>
+          <subsystemMoniker Id="eca7873e-2689-4631-8bfc-297816f8dfd9" LastKnownName="Logs Viewer" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="58c2c668-96d5-43cb-9006-ae96025c594c" name="Просмотр деталей сообщения" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="60751396-9fd7-44de-9bc3-cd310b906756" />
+        <subjects>
+          <subsystemMoniker Id="eca7873e-2689-4631-8bfc-297816f8dfd9" LastKnownName="Logs Viewer" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="8f406af6-34c0-43cb-ac93-84b72477978c" name="Просмотр стасистики по приложениям" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7e49fd25-e384-44d3-b088-c57ffc6de821" />
+        <subjects>
+          <subsystemMoniker Id="eca7873e-2689-4631-8bfc-297816f8dfd9" LastKnownName="Logs Viewer" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b6a05e54-b455-444b-8d8b-b3075eb508d4" name="Просмотр стасистики уровням " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9d7e25da-fffb-492e-a301-d186f7988692" />
+        <subjects>
+          <subsystemMoniker Id="eca7873e-2689-4631-8bfc-297816f8dfd9" LastKnownName="Logs Viewer" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="06991a58-06ce-4d16-a903-af05b38dc164" name="BJ.MongoDB.Models">
+    <elementDefinition Id="742cd33c-f0cd-4806-a071-922f38f11acb" />
+    <profileInstances>
+      <packageHasProfileInstances Id="6a622043-cc15-4116-aa48-23c5244d9635">
+        <profileInstance Id="85645b83-78a2-4d9a-9a61-c3275aaf4346" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="523d1884-786f-469f-87d1-3aebca42bbdd">
+        <profileInstance Id="83729623-9763-4f29-af20-faf9eebede76" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="142d31f2-8999-412c-b61f-e7e9483f88da">
+        <profileInstance Id="e966dfea-9d68-4023-9ab8-18e82638d339" name="CSharpProfile">
+          <elementDefinition Id="a3fdcabb-5e3a-48b7-9beb-48498a3d9287" />
+        </profileInstance>
+        <elementDefinition Id="6c910f69-e025-48f4-9737-04aa6dd2258a" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="24ad3d61-0617-4403-9ca8-ec36225afe4a">
+        <profileInstance Id="35f3ddb3-08ff-4221-ba07-15db6c428a71" name="TextTemplateBindings">
+          <elementDefinition Id="3ac50d39-f1bd-4ef9-995c-1caae7ec6ece" />
+        </profileInstance>
+        <elementDefinition Id="ba6b39ba-392d-457f-bf9f-ab9dd33ebee5" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

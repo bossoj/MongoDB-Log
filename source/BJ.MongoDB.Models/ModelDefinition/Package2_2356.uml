@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="03433e48-42be-4af0-9efc-9f4868ebcd9b"
+  name="Bson"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="4fb7a92a-417f-4747-b398-674f3b85233d"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMongoDB.Bson"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="f381e04b-0820-4786-844f-da63039f9db3"
+        name="ObjectId"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="53848ef6-4e92-4a4a-9810-84592b02cece"
+            handle="viewcode://./CodeSchema_Struct?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2Fpackages%2Fmongocsharpdriver.1.8.2%2Flib%2Fnet35%2FMongoDB.Bson.dll Namespace%3DMongoDB.Bson Type%3DObjectId"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c0ac4ed7-a6df-403d-97fb-e00aa25b69b9"
+            name="struct"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7590c20e-43e8-4535-8219-2c75aca7fa0e">
+                <propertyInstance
+                  Id="51748cd2-aaf4-4be9-9e67-de9e85b636a8"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0bfd6e98-4e04-45cd-8a5e-f9b590ec31fe">
+                <propertyInstance
+                  Id="d11c7057-1d21-420c-b739-5cbeff3c912a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="40ac96b8-d7c5-4382-a84e-18a8f5df61cf">
+                <propertyInstance
+                  Id="c9ff6155-857f-4001-bbf1-8ee0fb756438"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="89869c1e-1b04-4708-8331-44edbfc4ccc9">
+                <propertyInstance
+                  Id="199372c4-bddf-4905-9cfe-c4ce69725df3"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e600635d-787d-4f8e-9c78-ad61f5acdb92"
+        name="BsonDocument"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="8f157dc8-eefc-4a1f-89be-771813486fbc"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2Fpackages%2Fmongocsharpdriver.1.8.2%2Flib%2Fnet35%2FMongoDB.Bson.dll Namespace%3DMongoDB.Bson Type%3DBsonDocument"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="db122f4f-f1b0-47c4-8996-8ffd4a6b998e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="338b0385-83d6-4870-afd0-5a183c1ae495">
+                <propertyInstance
+                  Id="6a4d39c4-75f3-4cf1-bbb7-01d31917fde9"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="62ac27aa-41b1-402f-b774-a89cfa2222c7">
+                <propertyInstance
+                  Id="e1fa9a53-c992-4b75-94fa-3c57795bad1b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dc18c456-97ab-485b-b9bb-7b42f00bec61">
+                <propertyInstance
+                  Id="b424585c-9dbf-4cc6-b465-04f679861649"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9346fe87-0182-447c-a5f4-458eca6f605b">
+                <propertyInstance
+                  Id="22f4be66-db72-46a3-a643-b0ea9ec97d80"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b7f3382f-f8cb-4a61-98f7-c226aaba4828">
+                <propertyInstance
+                  Id="2998acfe-bfe7-447a-bc59-0cafa52de689"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

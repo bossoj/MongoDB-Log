@@ -1,0 +1,85 @@
+﻿/* Common style*/
+
+body {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+h3.header-main {
+    text-align: center;
+}
+
+.date-search-box {
+    width: 100%;
+}
+
+.text-search-box {
+    width: 100%;
+}
+
+.appname-table {
+    color: #428bca;
+}
+
+div.line {
+    border-top: 1px solid #d8d8d8;
+    width: 100%;
+    height: 10px;
+}
+
+button.float-rigth {
+    float: right;
+}
+
+/*div.border {
+    border: 1px dashed blue;
+}*/
+
+/* Index page*/
+
+.group-main {
+    width: 50%; 
+    margin-left: 25%;
+}
+
+/* Logs page*/
+
+th.sort_asc a:after {
+    content: '▲';
+}
+
+th.sort_desc a:after {
+    content: '▼';
+}
+
+.filter-group {
+    font-weight: bold;
+}
+
+/* Stat page*/
+
+.lable-badge {
+    border-radius: 10px;
+}
+
+/* Details page */
+
+.display-label {
+    text-align: right;
+    font-weight: bold;
+}
+
+.display-field {
+    text-align: right;
+}
+
+textarea.fixed {
+    resize: none;
+    cursor: default;
+}
+
+/* About page*/
+
+.about-group {
+    padding-left: 50px;
+}

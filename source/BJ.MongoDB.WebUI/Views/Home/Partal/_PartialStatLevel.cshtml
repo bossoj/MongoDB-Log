@@ -1,0 +1,70 @@
+﻿@using BJ.MongoDB.WebUI.Models;
+@model StatViewModel
+
+@using (Html.BeginForm("Stat", "Home", FormMethod.Get, new { @id = "form-search", @class = "form-inline", @role = "form" }))
+{        
+    <div class="row">         
+        <div class="form-group col-md-3">
+        @Html.DropDownList("App", Model.AppsName, new { @class="form-control", @onchange = "ChangeAppList(this)"})
+        </div>                  
+    </div>     
+}    
+<br>
+<table class="table">
+    <colgroup> 
+        <col style="width: 20%;" />
+        <col style="width: 70%;" />
+        <col style="width: 10%;" />
+    </colgroup> 
+    <tr class="success">
+        <th>Уровень</th>
+        <th></th>
+        <th>Все</th>
+    </tr>
+    <tr>
+        <td><span class="label label-default">DEBUG</span></td>
+        <td>
+            <div class="progress">
+                <div class="progress-bar progress-bar-warning" role="progressbar" style="width: @(Model.StatApp.DebugPct)%"></div>
+            </div>
+        </td>
+        <td><span class="label label-primary lable-badge">@(Model.StatApp.Debug)</span></td>
+    </tr>
+    <tr>
+        <td><span class="label label-info">INFO</span></td>
+        <td>
+            <div class="progress">
+                <div class="progress-bar progress-bar-info" role="progressbar" style="width: @(Model.StatApp.InfoPct)%"></div>
+            </div>
+        </td>
+        <td><span class="label label-primary lable-badge">@(Model.StatApp.Info)</span></td>
+    </tr>
+    <tr>
+        <td><span class="label label-warning">WARN</span></td>
+        <td>
+            <div class="progress">
+                <div class="progress-bar progress-bar-warning" role="progressbar" style="width: @(Model.StatApp.WarnPct)%"></div>
+            </div>
+        </td>
+        <td><span class="label label-primary lable-badge">@(Model.StatApp.Warn)</span></td>
+    </tr>
+    <tr>
+        <td><span class="label label-danger">ERROR</span></td>
+        <td>
+            <div class="progress">
+                <div class="progress-bar progress-bar-danger" role="progressbar" style="width: @(Model.StatApp.ErrorPct)%"></div>
+            </div>
+        </td>
+        <td><span class="label label-primary lable-badge">@(Model.StatApp.Error)</span></td>
+    </tr>
+    <tr>
+        <td><span class="label label-danger">FATAL</span></td>
+        <td>
+            <div class="progress">
+                <div class="progress-bar progress-bar-danger" role="progressbar" style="width: @(Model.StatApp.FatalPct)%"></div>
+            </div>
+        </td>
+        <td><span class="label label-primary lable-badge">@(Model.StatApp.Fatal)</span></td>
+    </tr>
+</table>
+

@@ -1,0 +1,122 @@
+﻿@model BJ.MongoDB.WebUI.Models.LogItemViewModel
+@using BJ.MongoDB.WebUI
+@using BJ.MongoDB.WebUI.Classes
+@using BJ.MongoDB.WebUI.Mvc
+@{
+    ViewBag.Title = "Детали";
+}
+
+<div class="well well-sm">
+    <div class="container">
+        <h3 class="text-primary header-main">Сообщение журнала</h3>
+    </div>
+</div>
+
+<div class="tab-content">
+    <div class="tab-pane active" id="app">
+        <div class="panel panel-info"> 
+            <div class="panel-heading filter-group">Детальная форма</div> 
+            <div class="panel-body"> 
+                <table class="table">
+                    <colgroup> 
+                        <col style="width: 10%;" />
+                        <col style="width: 40%;" />
+                        <col style="width: 10%;" />
+                        <col style="width: 40%;" />
+                    </colgroup> 
+                    <tr>
+                        <td class="display-label">DateTime:</td>
+                        <td>@Html.DisplayFor(model => model.Item.timestamp.AsLocalTime)</td>
+                        <td class="display-label">Logger:</td>
+                        <td>@Html.DisplayFor(model => model.Item.loggerName)</td>
+                    </tr>
+                    <tr>
+                        <td class="display-label">App:</td>
+                        <td>@Html.DisplayFor(model => model.Item.domain)</td>
+                        <td class="display-label">Class:</td>
+                        <td>@Html.DisplayFor(model => model.Item.className)</td>    
+                    </tr>
+                    <tr>
+                        <td class="display-label">Level:</td>
+                        <td>@Html.DisplayFor(model => model.Item.level)</td>
+                        <td class="display-label">Method:</td>
+                        <td>@Html.DisplayFor(model => model.Item.method)</td>   
+                    </tr>
+                    <tr>
+                        <td class="display-label">Thread:</td>
+                        <td>@Html.DisplayFor(model => model.Item.thread)</td>
+                        <td class="display-label">Line:</td>
+                        <td>@Html.DisplayFor(model => model.Item.lineNumber)</td>   
+                    </tr>
+                    <tr>
+                        <td class="display-label">User:</td>
+                        <td>@Html.DisplayFor(model => model.Item.userName)</td>
+                        <td class="display-label">File:</td>
+                        <td>@Html.DisplayFor(model => model.Item.fileName)</td>   
+                    </tr>
+                    <tr>
+                        <td class="display-label">Machine:</td>
+                        <td>@Html.DisplayFor(model => model.Item.machineName)</td>
+                        <td class="display-label"></td>
+                        <td></td>   
+                    </tr>
+                </table>
+
+                <div class="line"></div>
+
+                <div>
+                    <ul class="nav nav-pills" id="details-tabs">
+                      <li class="active"><a href="#message">Message</a></li>
+                      <li><a href="#stacktrace">Stacktrace</a></li>
+                      <li><a href="#exception">Exception</a></li>
+                      <li><a href="#properties">Properties</a></li>
+                    </ul>
+                    <br>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="message">
+                            <textarea class="form-control fixed" rows="13" disabled>@Html.DisplayFor(model => model.Item.message)</textarea>
+                        </div>
+                        <div class="tab-pane" id="stacktrace">
+                            <textarea class="form-control fixed" rows="13" disabled>@Html.DisplayFor(model => model.Stacktrace)</textarea>
+                        </div>
+                        <div class="tab-pane" id="exception">
+                            <textarea class="form-control fixed" rows="13" disabled>@Html.DisplayFor(model => model.Exception)</textarea>
+                        </div>
+                        <div class="tab-pane" id="properties">
+                            <table class="table">
+                                <colgroup> 
+                                    <col style="width: 20%;" />
+                                    <col style="width: 80%;" />
+                                </colgroup> 
+                                @foreach(var name in Model.Properties.Keys)
+                                {
+                                <tr>
+                                    <td class="display-label">@name</td>
+                                    <td>@Model.Properties[name]</td>
+                                </tr>
+                                }
+                            </table>                            
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!--panel-body-->
+        </div>
+    </div>
+</div>
+
+<p>@Html.ButtonCancel("Назад", Url.Action("Index"))</p>
+
+@section scripts{
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            // active stat tabs
+            $('#details-tabs a').click(function(e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+        });
+
+    </script>
+}

@@ -1,0 +1,74 @@
+﻿@using System.Web.Optimization
+@using NavigationRoutes
+@using BJ.MongoDB.WebUI.BootstrapSupport
+@using StackExchange.Profiling;
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="MongoDB Logs Viewer Web">
+        <meta name="author" content="Resnenko Maskim resnenko@ya.ru">         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="~/Images/main.ico">
+        <title>@ViewBag.Title</title>       
+        @Styles.Render("~/Content/bootstrap/base")
+        @Styles.Render("~/Content/bootstrap/theme")
+        @Styles.Render("~/Content/bootstrap/addons")
+        @Styles.Render("~/Content/css")
+        @RenderSection("head", required: false)
+        @Html.Partial("_html5shiv")
+    </head>
+
+    <body>
+
+    @MiniProfiler.RenderIncludes()
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">MongoDB Logs Viewer</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li @if (@ViewContext.RouteData.GetRequiredString("action") == "Index")
+                { @Html.AttributeEncode("class=active");
+                }>@Html.ActionLink("Главная", "Index", "Home")</li>
+            <li @if (@ViewContext.RouteData.GetRequiredString("action") == "Logs" || @ViewContext.RouteData.GetRequiredString("action") == "Details")
+                { @Html.AttributeEncode("class=active");
+                }>@Html.ActionLink("Журнал", "Logs", "Home")</li>
+            <li @if (@ViewContext.RouteData.GetRequiredString("action") == "Stat")
+                { @Html.AttributeEncode("class=active");
+                }>@Html.ActionLink("Статистика", "Stat", "Home")</li>
+            <li @if (@ViewContext.RouteData.GetRequiredString("action") == "About")
+                { @Html.AttributeEncode("class=active");
+                }>@Html.ActionLink("О программе", "About", "Home")</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+        @RenderSection("featured", required: false)   
+                           
+        <div class="container">
+            @Html.Partial("_alerts")
+            @Html.Partial("_validationSummary")
+            @RenderBody()   
+            <hr>
+            <footer>
+                <p>&copy; @DateTime.Now.Year - Ресненко Максим</p>
+            </footer> 
+        </div> 
+               
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryval")
+        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)    
+    </body>
+</html>
+

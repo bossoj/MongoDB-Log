@@ -1,0 +1,30 @@
+﻿@model HandleErrorInfo
+
+@{
+    ViewBag.Title = "Ошибка";
+}
+
+<div class="alert alert-danger">
+    <h3 class="error">Ошибка.</h3>
+    @if (Model != null)
+    {
+        <h4>При обработке запроса <b>@Model.ControllerName</b>\<b>@Model.ActionName</b> произошла ошибка.</h4>
+    }
+    else
+    {
+        <h4>При обработке запроса произошла ошибка.</h4>
+    }    
+    <br>
+    @if(ViewBag.Error != null)
+    {           
+        <p>@ViewBag.Error</p> 
+    }       
+    else
+    {
+        if(Model != null && Model.Exception != null)
+        {      
+        <p><b>@Model.Exception.GetType().Name</b></p>        
+        <p>@Model.Exception.Message</p> 
+        }
+        }
+</div>

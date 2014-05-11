@@ -1,0 +1,2163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="697245cc-4081-4bcb-993e-14dfe1df2e2b"
+  name="Models"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="7b7a532c-b0c6-4ddd-a361-de4f79660ae6"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DBJ.MongoDB.WebUI.Models"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="cd1f5217-aaf5-45ab-8f15-0ab7d5a8be36"
+        name="StatLevel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="5fc86b9b-28e3-43a3-a854-0480b3045343"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DStatLevel"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f247bee4-ab08-478c-96f8-be9ac631886c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e2c550fa-b117-4be8-bcd9-806cf418b889">
+                <propertyInstance
+                  Id="dd520078-37b2-498f-aa48-99990d7e4b1d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="df58307a-240c-4845-ab63-86bd16c08cf6">
+                <propertyInstance
+                  Id="fde6bf2c-07d3-4c3e-8d15-2b0d6e0dfb45"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7cdba2e7-9593-46e6-abe2-96173bce1baa">
+                <propertyInstance
+                  Id="a3a2f5a2-97cb-4e5f-9bc4-0b8bf0c4d083"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c44efb7b-0c32-4f3f-b6d8-045f89c99ff8">
+                <propertyInstance
+                  Id="7a87192a-6053-44af-8e2d-bf29b847d17a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dbdfaaa7-7a19-497a-bba7-b95e2e2e6f2b">
+                <propertyInstance
+                  Id="eea2993c-1650-429c-b746-8d2854a5d99c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="8b892eed-f15f-40a0-9961-dce25004b0d6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="6f0991ad-2913-4142-9d7b-bd093742c44f"
+              LastKnownName="HomeController"
+              LastKnownLocation="Package_0000.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="a9ef6037-83a7-433c-bfdb-fd6fcf1020e6"
+            isDerived="false"
+            sourceEndRoleName="StatLevel"
+            targetEndRoleName="Result"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ed4602a4-850c-4f3c-bf3f-49a41524b0cf"
+              LastKnownName="List&lt;StatLevelItem‎&gt;"
+              LastKnownLocation="Package7_2355.uml" />
+            <description>Property Result references type List&lt;StatLevelItem‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3b90b3cf-d611-4f29-a45f-b6a35be5ae38"
+                  name="StatLevel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d050071c-8068-43fd-92ac-59590ce3c0de"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4997a582-7dba-4f54-a2d2-857a50f1c1ef"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4b4a29de-0dbb-4b51-84a5-1f4fd5b84090"
+                  name="Result"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="08c45eba-cbde-4769-8290-8d99447d69bb"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e747d32f-785d-4d52-9690-a902acf4121c"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="dbb2a8f1-493b-4ee4-8f85-7aac22fef268"
+            name="Result"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="23ce57ee-0db7-493a-bcab-dffed3d82ff9"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DStatLevel Member%3DResult"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7e96089b-0ba0-4b5e-8918-b960e9a5e4f2"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1234ab60-f246-41a7-9675-b9991315a1e0">
+                    <propertyInstance
+                      Id="ee9ec9a9-9a20-40cb-b88f-22019c71e3f9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78244704-e858-40a2-b75a-e54acd99d9d2">
+                    <propertyInstance
+                      Id="2f0d6c37-fc24-40ef-aecf-36f4bd9e26e0"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ceb3b6f4-e083-492a-8a1b-774b44aaab6f">
+                    <propertyInstance
+                      Id="97e38585-e00d-40f1-b5d5-93044e3088d9"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b723814-6aa3-4cc6-a9c3-7c1141fbf00c">
+                    <propertyInstance
+                      Id="3afe0d6c-efdb-447a-bb15-f96383039eb7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44f21ba2-9838-4876-b78e-9b7912fd0332">
+                    <propertyInstance
+                      Id="2d74da50-0869-490a-aa33-80cc2905a564"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a71d1403-5888-4e65-9bc3-063db5fe89b5">
+                    <propertyInstance
+                      Id="f89d4fad-772d-4097-b9d7-924b48222036"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a615444c-8da7-44d2-bcd5-abc9bffb579c">
+                    <propertyInstance
+                      Id="3d0bc448-b6f0-492d-88ca-374c5db7e216"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ed4602a4-850c-4f3c-bf3f-49a41524b0cf"
+                LastKnownName="List&lt;StatLevelItem‎&gt;"
+                LastKnownLocation="Package7_2355.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a2f726e9-bab4-4b84-aea7-a4914083b451"
+            name="_stat"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="0d9611e4-40a3-42c5-a8fb-6e335a14a48c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DStatLevel Member%3D_stat"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cfc7f499-c475-4864-9000-868db0631f2b"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ca23953-2b08-4434-a373-24d6e2b86250">
+                    <propertyInstance
+                      Id="b2dd3b46-6020-4f8f-8c73-89942a5e1197"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7bbecc2-4482-46cd-9c5b-f7c585689742">
+                    <propertyInstance
+                      Id="d39a3472-909b-49d6-936e-93fe146084f6"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bee0a798-0a96-4762-a88b-1c4efc8d94fe">
+                    <propertyInstance
+                      Id="5a4f0546-63e2-47f7-a589-f4a850299e4a"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="435fd2d9-5ca0-4714-89ec-b2a85ac927c7">
+                    <propertyInstance
+                      Id="e2f7f05a-9484-42e4-bfdc-b93159c6714d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24ed609a-fc0a-4437-8c78-dad27ce75464">
+                    <propertyInstance
+                      Id="c5e7c650-f69a-4f31-a9aa-e36f31162f81"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ed4602a4-850c-4f3c-bf3f-49a41524b0cf"
+                LastKnownName="List&lt;StatLevelItem‎&gt;"
+                LastKnownLocation="Package7_2355.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9f2eb07f-0421-481f-9a11-93d42f85143f"
+            name="StatLevel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c09fbd92-4b89-49a2-864f-0e35506ad9f8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DStatLevel Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e8e7af30-1692-4aef-902e-1a853a423910"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="970ad0a4-0145-4a70-bf9b-dcc67211789c">
+                    <propertyInstance
+                      Id="b7c387c8-e170-493a-a050-802bb8b2ba19"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8a2209d-e4a1-403f-8751-653c240771aa">
+                    <propertyInstance
+                      Id="2fe17bc7-255c-4fca-b2b2-701b3e0668d9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99c63839-fd85-4eb6-87fe-129e75038621">
+                    <propertyInstance
+                      Id="31f3b4ed-1f7a-4422-98a1-46dc2c607a7b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3827e3fe-88e5-4bc3-9e89-a855c5837c7f">
+                    <propertyInstance
+                      Id="fd925a04-8d09-4816-bad5-474251fcff13"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25748899-dfd5-4788-a7fa-c225e111d156">
+                    <propertyInstance
+                      Id="54ba2358-490f-4423-a8fc-b206d0f90f76"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56f88940-0c1d-4036-ab61-85ed4c1d8a85">
+                    <propertyInstance
+                      Id="936e159c-960e-4264-8f42-2297cd4526b4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9ddc2b40-283e-40c7-abee-84c60406a829"
+        name="StatAppItem"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="00a5cba7-ea6b-4065-b4d0-e232f4e02f65"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DStatAppItem"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="758bae78-a9fc-44c3-848c-38b8f391780e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d2651f8e-a4cf-4ade-82e9-082789748a9a">
+                <propertyInstance
+                  Id="5f6ba382-e02d-40ba-ac02-9557846527e3"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c8a48bc1-aeeb-4028-881d-1c6295c03f36">
+                <propertyInstance
+                  Id="7b8b0dd1-f9b2-4645-b64b-893a3fed93e6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6176d2cb-551f-49d9-89db-5406be655822">
+                <propertyInstance
+                  Id="b1abe9a6-874c-403b-a950-669b17bb806f"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="77a606c3-700a-41f0-af2d-6ffea510ff55">
+                <propertyInstance
+                  Id="879dd918-2f98-4226-9996-21d0da571851"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c136a9fe-56e5-4942-8d8f-63d05da02d02">
+                <propertyInstance
+                  Id="ade7326d-a55e-441a-b575-ba81e3057278"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="6dcfe310-974c-402c-bcfc-f23f4b2361b9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="6f0991ad-2913-4142-9d7b-bd093742c44f"
+              LastKnownName="HomeController"
+              LastKnownLocation="Package_0000.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="b49692ce-bf21-4407-ad96-b1382e426d1a"
+            name="AppName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f181b8c7-52a7-4325-97dc-09d7f1088b49"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DStatAppItem Member%3DAppName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f1be2454-5a8c-40e7-b89a-0d6d459cf826"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="369f9926-b401-400d-9edb-2e4f16f1113d">
+                    <propertyInstance
+                      Id="4abbdd81-7758-4f30-8d42-ace1838d19ea"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71abcab5-cc5b-49ea-a228-020f7e75d338">
+                    <propertyInstance
+                      Id="5b7d60d4-93ee-4516-8ff8-f726ce4b1bd0"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae801c60-d8d3-4112-a7de-e3417e4093ce">
+                    <propertyInstance
+                      Id="56f72426-d2ac-4a1f-87ba-82c5fd786d47"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6668ba56-5863-4578-9cfd-2dbee2823662">
+                    <propertyInstance
+                      Id="9e26c13e-aa30-4931-915a-6b9638520d28"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4eb96da-00e0-4785-bbd6-99cf07a03f75">
+                    <propertyInstance
+                      Id="b118729e-0e74-40f1-b220-d7333aac8064"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="74fbf49f-2837-4057-9ae8-1c30cd89d1d3">
+                    <propertyInstance
+                      Id="36a1edc8-f832-4634-80b0-a3da09dc253b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e47a02d4-151c-4455-b1a3-e3c84b00ddac">
+                    <propertyInstance
+                      Id="78bd6773-7c82-4835-bdf9-afdfe3625806"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="BJ.MongoDB.Models.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f989ed5c-9597-45f2-ac3f-b45fae81e604"
+            name="Debug"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7eaff1a5-a033-4165-9ced-d85f42c8d2ad"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DStatAppItem Member%3DDebug"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b7509072-d533-42cd-b7fb-0bfba3d499fb"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8864c004-44c5-4639-ac1f-6d649fac6d42">
+                    <propertyInstance
+                      Id="b4ca8ace-604e-4658-8c97-bd5c56378336"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1299caff-c4f8-4576-a469-da71cafbe764">
+                    <propertyInstance
+                      Id="654ef80c-c518-4e81-82be-ddcb7ec654eb"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5dae76e-c926-418c-9506-a7c8ebf71b1b">
+                    <propertyInstance
+                      Id="9fde1285-cdb3-4526-8a7b-6a71fb81994c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99784ed6-aa84-407e-b8c1-4c17a158d6f8">
+                    <propertyInstance
+                      Id="7c89c5cb-0abe-45ca-876f-3157e70dd0a5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac23302d-a7a1-4ae8-9be9-d4604f1bff21">
+                    <propertyInstance
+                      Id="400e46eb-65bd-4b06-8371-4bdc9f7d2dac"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5871176-d0dd-4381-973d-cebc30f49a2e">
+                    <propertyInstance
+                      Id="1becc300-a8c4-4653-8a90-d53f5685533f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db561eeb-c936-4566-a1b3-7abcdeafd85a">
+                    <propertyInstance
+                      Id="5d57c90a-7464-49f4-a38c-8f50aa0098b6"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="BJ.MongoDB.Models.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="480ffbff-f20b-4ef5-8fb7-8f182b4a29fb"
+            name="DebugPct"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="9c4c1007-b86a-4d06-aadc-7a0383049004"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DStatAppItem Member%3DDebugPct"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="010016b4-746d-4e72-8922-4d189b766630"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df2b3ae0-1e4d-4cb3-987f-f1e8decb37ce">
+                    <propertyInstance
+                      Id="9254ce44-1c66-458e-a53c-5e3e583dabf9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="255b13ab-0353-4fc5-af8a-d5dcaf15402f">
+                    <propertyInstance
+                      Id="e338743e-ea2a-4900-a0c1-bbcbd66c0940"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a18eefb9-86fb-4537-8f48-b9becd64b839">
+                    <propertyInstance
+                      Id="a972bb3a-cec7-486c-962f-bd7af3ac85fe"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53edcde9-3115-4a2d-991b-3d0e8d30cd40">
+                    <propertyInstance
+                      Id="b7b2ea3f-7ebf-4373-8aa6-7b6517e06837"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eecffa07-eba3-4f35-8d57-ba705ed3e25c">
+                    <propertyInstance
+                      Id="773caf71-5fa0-447b-975b-7d92a68e38b9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e3cb471-1c2e-4f06-bb4b-198ba659b840">
+                    <propertyInstance
+                      Id="000bf6a0-e696-4194-982d-991bb5b42a0b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4caf7ba0-a5ce-4411-8184-d4439fd95bc4">
+                    <propertyInstance
+                      Id="62c45987-f9e8-45d0-9190-1689e11e81dd"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="BJ.MongoDB.Models.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d50c8e0c-82f2-4862-b395-1a2ff6b0c77e"
+            name="Error"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="04166f4e-17af-4659-9aa8-683b774ffc2e"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DStatAppItem Member%3DError"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2716359f-d272-4b1c-9b2b-fa1912c9adc9"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc2f9afa-ffdf-4703-9945-e2e45ea497a0">
+                    <propertyInstance
+                      Id="d8c413a6-1cce-4d19-bf01-87fe180734b0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82088f32-5598-4166-92ff-b15df4e68084">
+                    <propertyInstance
+                      Id="07f98f7e-f404-4a80-9f8a-34816c1dd876"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04359d09-98c4-4018-87de-e2eeea94d306">
+                    <propertyInstance
+                      Id="ded33465-29e2-49d6-85e1-d57d7d06dae6"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0022a5f7-0e9f-4b23-9012-67d6672ac87e">
+                    <propertyInstance
+                      Id="90415c2e-fccd-4171-8c64-4397ab477ed9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb181ef8-66b7-4c18-a145-c92b7e0e1058">
+                    <propertyInstance
+                      Id="8a63958b-2922-47cb-aa24-677038cb05fe"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fd235aa-4ddd-4d2a-8beb-799bca0f9dbd">
+                    <propertyInstance
+                      Id="6ba83e2e-f5c2-4671-a565-b27f0ef17f20"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85437e1e-cc00-42a3-a815-37087b737d39">
+                    <propertyInstance
+                      Id="7a2e38c5-8c08-48f1-bdd1-2d1e52f8b6c0"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="BJ.MongoDB.Models.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0dd70bbf-3e7d-47ef-9d47-728b5926bb1f"
+            name="ErrorPct"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="9f80c186-1107-4776-af6b-513b6eeffd0e"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DStatAppItem Member%3DErrorPct"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="43f711f8-314b-4931-8cb3-ed50b3019fd1"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7956108-f1ef-4f4d-8202-6264df103fc2">
+                    <propertyInstance
+                      Id="fc0e6bc4-2ccf-4d2a-b2fb-dfdfae21110a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7941639-3eef-4d3f-9a05-4e2d9efc85c4">
+                    <propertyInstance
+                      Id="464308fd-85b4-4270-af88-f81ddf4fe00e"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc08afff-03c6-4d9e-85c7-7bc33c81af0a">
+                    <propertyInstance
+                      Id="843d39ae-1ca7-4ce9-aa59-8c8398ddb1c1"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8a0a502-32dc-4376-a146-237e912b8c7e">
+                    <propertyInstance
+                      Id="157facd4-4ff8-45a3-8f90-fdb39fd11fd6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9e7419c-fff5-4740-9bf4-9bb1e50c3ef6">
+                    <propertyInstance
+                      Id="d3d7b0d6-441a-4669-80b7-df04e0352ec2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="429c06ca-0042-4df4-95d1-32b23d8a8a4b">
+                    <propertyInstance
+                      Id="c639b0b8-f91e-4c89-8adc-97b15954d1d8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a745e7cb-9722-4fa9-bf2e-86b09897aa15">
+                    <propertyInstance
+                      Id="4538e43e-df27-47a6-b240-b70c03bdb1f2"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="BJ.MongoDB.Models.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="bd26cf1c-0711-4092-9203-3e33cb7fa28e"
+            name="Fatal"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="260a8391-9faf-43fa-8113-c54ada07e412"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DStatAppItem Member%3DFatal"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7ea5b049-eddb-41bb-83b1-567adfd9f504"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd241ac2-fb99-490d-bc7f-05ab958a5f9d">
+                    <propertyInstance
+                      Id="e908aec1-571a-4e95-ac35-57659d8c574a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de8ab77b-175f-4642-9f5c-6d069cd7db60">
+                    <propertyInstance
+                      Id="3a5ef0bb-da75-41ae-a790-e3063efe2afe"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e282eb27-4c94-474d-8caa-e11555639e51">
+                    <propertyInstance
+                      Id="505b38ad-0e41-4348-b4b4-4c367513ca66"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b702a7b0-d623-49c1-b1f7-2401362bf033">
+                    <propertyInstance
+                      Id="dd62ad69-e835-43ff-bd9f-d1d35a94a67a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec9dfda3-8cc5-44ab-9f16-fa6b96f6a648">
+                    <propertyInstance
+                      Id="a2e36b13-ff2c-4e3c-8455-287442e4aace"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2bf7be02-82e0-41f8-b060-860836cf5b79">
+                    <propertyInstance
+                      Id="1d84201c-8f03-4a24-8376-e494e1d45004"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="baad1471-4a25-4e50-93d8-93e3c7214b2e">
+                    <propertyInstance
+                      Id="0f4e880e-b61c-4802-b2fb-69a53319b808"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="BJ.MongoDB.Models.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="23861ff4-1325-4a2b-bf3b-5e15c765d771"
+            name="FatalPct"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b63104f0-18cc-47d4-8a68-f5c8c0a031c3"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DStatAppItem Member%3DFatalPct"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ebeec22b-76fc-4b1a-a697-e228993d7b9d"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="316ffbb8-919f-4ed4-97a9-1224cc6702f1">
+                    <propertyInstance
+                      Id="d89af5fe-d050-402f-8dcb-073b9e8f5bdf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5e3f0fb-203d-4a83-a8b9-41add2651bec">
+                    <propertyInstance
+                      Id="54238dc5-b170-4af7-9b62-6c7f21ab22a3"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f09da85-774a-48db-9174-99be18b60e64">
+                    <propertyInstance
+                      Id="ffa8dff5-f706-4e2f-91e6-009b898aa659"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bacafecf-8340-47f7-b56a-a9772c4d76a6">
+                    <propertyInstance
+                      Id="67984f0b-ca89-4901-8452-daa0335ea39d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8308742e-183c-4df6-9837-83048b5271a2">
+                    <propertyInstance
+                      Id="76bc0ddf-46f6-4684-a3e6-6e9435e3caae"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b516d2ad-1bd1-4ae9-9a61-98a5016d9cb3">
+                    <propertyInstance
+                      Id="0d6a613b-3ed0-4e62-ac15-b46cb40ac126"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81994304-2acd-499c-aaaf-0de191cc0ec1">
+                    <propertyInstance
+                      Id="74b2bc97-a089-4039-baf3-4e3a1e7a773c"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="BJ.MongoDB.Models.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f207a65f-56a8-40ee-aedc-cbc426731a5a"
+            name="Info"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="211fd4f0-e188-44ac-98aa-7e27121b5182"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DStatAppItem Member%3DInfo"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="798ec422-ca00-4307-b877-7b047f36c95d"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="217211ff-9242-4d0c-b0df-3be2b5bf12e0">
+                    <propertyInstance
+                      Id="cb4367d7-621c-4939-b245-8257e3c8be7a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23b7df02-0f38-4769-b9b9-45aa8c278ab8">
+                    <propertyInstance
+                      Id="d40efd97-f03b-4294-9db3-4a2fe8ff9249"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1cc15685-0abb-4ab4-8431-fa263ecf79bb">
+                    <propertyInstance
+                      Id="6b90890e-2e30-44b6-9023-f7ad3a06fd47"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="edd023d2-781d-4159-9f45-b5731de97702">
+                    <propertyInstance
+                      Id="a8a24dfe-a3de-469f-8944-1c76a63eb95f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62db12d7-a773-4af8-bbf4-07ccfb32e4c5">
+                    <propertyInstance
+                      Id="f40e2d52-0ded-4eb4-8b59-2aeb8d9b4807"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e75a7f4f-0bf8-4c2f-b33c-9cb164dfecbf">
+                    <propertyInstance
+                      Id="f358ca74-2f28-4a54-9584-2bbbe346df31"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b256b20-da2c-4999-a211-c3f2ef9fa9df">
+                    <propertyInstance
+                      Id="fc7c752a-72b1-41d0-8d42-c5da6e75f0ea"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="BJ.MongoDB.Models.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f76ce1a7-8113-43db-bb30-92d482afc9a4"
+            name="InfoPct"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f62906dc-66c9-4958-b49c-3188319b6f9d"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DStatAppItem Member%3DInfoPct"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a6d9ccda-2afe-4f79-9803-62e2d6e8f3c2"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="525fa4ed-65ea-4bda-82c2-09a98d0d62ee">
+                    <propertyInstance
+                      Id="4c9a270f-e202-48cd-9b7e-971d973ce4c8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9610642f-864a-4e84-96a7-822c74eb6e94">
+                    <propertyInstance
+                      Id="5a6883fa-bb8a-4c6f-a850-d5431cb1bada"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6846217f-c6ad-44fc-bbc7-fff70bd62cfc">
+                    <propertyInstance
+                      Id="3f49da75-e9bb-4b5c-9488-cb3b9af6aec1"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6ce1667-513a-4fea-b6a1-bb45b2de9686">
+                    <propertyInstance
+                      Id="f23918e0-545e-4889-b2ac-b5f8b43df993"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3971bbd5-dacc-4cdc-82c7-9707a83d0385">
+                    <propertyInstance
+                      Id="c399474f-1ce6-4a57-850c-38f1ff71e11b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78faa9cf-3252-4102-839a-0f8df1bc0f13">
+                    <propertyInstance
+                      Id="71bf1b87-9679-42ef-a4bc-35cef3751baf"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="526d5739-b54f-4815-9272-9c5185a1bf7d">
+                    <propertyInstance
+                      Id="f628200e-e535-4e7a-b2fd-39b3c35cc4fe"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="BJ.MongoDB.Models.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1a68d343-28d9-4ce2-9b14-a20c4d561d18"
+            name="Warn"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="76e29303-da4f-4b66-839e-6e0c4c86e869"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DStatAppItem Member%3DWarn"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3e9f1067-23d1-4ee2-95f1-ae08d36badbd"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="538f033c-13c6-46ba-9142-17cb08c83d17">
+                    <propertyInstance
+                      Id="2367780b-2564-478c-94ce-8f9ac84621d9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="873c11c6-7b72-4548-903a-890cb7f75c7f">
+                    <propertyInstance
+                      Id="f14a2ec9-2c2e-423d-800b-196846a97bde"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="687ca234-a903-4f40-a90a-37fe7d4ba8a9">
+                    <propertyInstance
+                      Id="79a32d7e-142c-41eb-9df3-f915c739c8a4"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c2199f6-3263-46d9-bce2-c6723c627909">
+                    <propertyInstance
+                      Id="b80098bf-78a3-4566-8f68-d9b3acdbcadd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af1e7fbd-2ddb-40d4-bde7-cb35361c89af">
+                    <propertyInstance
+                      Id="31bc1cfd-852c-46e2-816c-eec8779b5008"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2eb89ec5-ca59-469c-a871-d7a670a88579">
+                    <propertyInstance
+                      Id="7cb5ce30-6d84-4429-b4ee-9119a9585ba5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3a7ffcd-6979-4847-9d57-452d221eee2e">
+                    <propertyInstance
+                      Id="7cd1cfd4-c3e7-41ac-915c-617c7b258ee3"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="BJ.MongoDB.Models.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2b87d80a-7553-47a8-b6ed-7c25b0eb6c1f"
+            name="WarnPct"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2a173e80-43a2-4220-8b71-9c90e16423dc"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DStatAppItem Member%3DWarnPct"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7d2ef2fc-4ff7-48f4-a865-960c2b09abb0"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e418bea1-c6d5-4744-b2e7-e0501202a9be">
+                    <propertyInstance
+                      Id="13e4d675-10e1-4792-a342-38cf842509fe"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40a2d573-36f3-426f-95bd-a34111f2b497">
+                    <propertyInstance
+                      Id="6cff9964-02f4-4aaa-be03-dd87177caadc"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="662d7e98-b194-44a7-b9e5-ca5ba18ac51c">
+                    <propertyInstance
+                      Id="2dada21f-8fae-4e9e-a392-cd975d1fbf00"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8aa3e185-aa4e-4c4b-ad8e-56873134cd05">
+                    <propertyInstance
+                      Id="a8c0aba6-2c28-429e-a326-b5d43422b2b2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34a00a4a-7251-4cb6-beca-56fc1b881e3e">
+                    <propertyInstance
+                      Id="22d945e8-2242-4cb2-983a-10ce33410065"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a636e5f-69ba-4fc4-813c-835392504fe7">
+                    <propertyInstance
+                      Id="02701564-311f-42f7-9850-9f9f084233fa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5db82a43-74b3-481f-b167-616de6903e6f">
+                    <propertyInstance
+                      Id="d95f25a8-feda-48ce-b3cf-e9f7a0115205"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="BJ.MongoDB.Models.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="65c97351-8683-4590-a8e5-a5c7fb4bf750"
+            name="StatAppItem"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a596f8ec-5239-4da5-9e15-7f983254294e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DStatAppItem Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e32df3d8-5541-4fd2-a53d-d046cd16ef52"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="408bdf40-1b25-496f-a5cb-6a60240a947b">
+                    <propertyInstance
+                      Id="b5eeab0a-721b-4d9d-9880-ad3415859617"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5467d328-3a06-49f6-8f42-8ead28600e71">
+                    <propertyInstance
+                      Id="ae513107-72df-483f-be6f-bc21c46cd2e9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3e9041e-8969-4b07-a1b6-b801a9a9397b">
+                    <propertyInstance
+                      Id="02528522-221c-46db-b38c-fae8c14d5757"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df0b48cb-3afb-410c-8ca6-c9585b97065a">
+                    <propertyInstance
+                      Id="a6321325-e12f-4dfb-b3a8-4438a8ab76d7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42818fee-b3ac-45bd-9c36-5b52198ab9f6">
+                    <propertyInstance
+                      Id="ddb60f56-6353-429b-b454-0e13bb73bd7d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b673269e-b6e6-4d7b-a3c9-e63c6b47d9fa">
+                    <propertyInstance
+                      Id="55658706-0354-4022-bfc9-caceb8c62790"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="215e526e-801b-4983-98b7-f06564bd79a5"
+        name="StatOS"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="053dd774-4df1-42ea-9c8c-5ebfa7c8a93f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DStatOS"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0bb8bad1-1652-48c8-a3e4-c9cc724cfa04"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e17682c4-42e8-48b4-af34-fca44b3b6282">
+                <propertyInstance
+                  Id="65cba84e-e92f-4ab5-ac46-70237e80b3df"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e537afd9-baa5-48c9-974a-1878a2da4305">
+                <propertyInstance
+                  Id="0f2ee185-9bdf-4219-9f6d-d960f1a245c9"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="160e6008-9738-420c-8fa0-c60ff6579421">
+                <propertyInstance
+                  Id="72137d96-98d9-4966-a543-4a30680500ee"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="62246bd6-1c15-4b1b-8a4f-536da7c314ef">
+                <propertyInstance
+                  Id="6b334b11-7a19-4e48-94e4-2955430e27bb"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2041ec9a-9be4-40aa-9359-4dd906c5ffce">
+                <propertyInstance
+                  Id="36edd4a0-ccb5-4bbd-9f12-29d8ca82d485"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="01bc65cf-af4d-48c6-acc0-d65c8e21fff9"
+        name="LogViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="ee261035-07e4-4549-b11e-ef7a68522d24"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DLogViewModel"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b0fe0df2-5521-4215-a974-91cb1db8adeb"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="580e6962-6610-4398-88f8-e6d492ff1f1e">
+                <propertyInstance
+                  Id="9cc0de09-ea2f-4b73-9956-05a9dbe5efb9"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c11d39e9-9872-42b2-8d74-3c29ae653e33">
+                <propertyInstance
+                  Id="88220365-0c3c-4ccc-bf7a-d481a2720d25"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ead3b100-51d7-476e-832a-87677c9f9698">
+                <propertyInstance
+                  Id="e10866ca-74d5-4594-a0a1-fac2d290b1b9"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3868fec7-66c7-4fdc-a091-a5753ab8eaf7">
+                <propertyInstance
+                  Id="57a8acac-c7e3-4dc0-a43e-4291c37e20f6"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4ffda725-2337-48ba-9e7c-ab78cf0df103">
+                <propertyInstance
+                  Id="071bd8ae-e9e2-4804-9cc5-fb1ce44ad775"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="566d5434-29d6-4288-be43-9b1e74b5aad6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="6f0991ad-2913-4142-9d7b-bd093742c44f"
+              LastKnownName="HomeController"
+              LastKnownLocation="Package_0000.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="8fcab4ee-9faa-4067-834f-c2797fea4da9"
+            isDerived="false"
+            sourceEndRoleName="LogViewModel"
+            targetEndRoleName="Entries"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="84cb4a73-e1e2-47bc-b9c5-1b06422bf5e1"
+              LastKnownName="IPagedList&lt;LogItem‎&gt;"
+              LastKnownLocation="Package_2359.uml" />
+            <description>Property Entries references type IPagedList&lt;LogItem‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a3ab4544-7575-4fc4-a702-d4cff76189f0"
+                  name="LogViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="937d2893-07d7-4344-8410-3f47187772fa"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="16382d8e-7818-4ecb-a469-d03c4abbad19"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="65a6a718-011e-4446-9efd-b5902e9f5bb8"
+                  name="Entries"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5c0f0317-011c-455e-8436-4abf71a75ce5"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6edc9c8b-62b8-4d56-b9f4-d31fa5536d9e"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fbf586a0-ac56-4b4d-af20-aa0e71f5af40"
+            isDerived="false"
+            sourceEndRoleName="LogViewModel"
+            targetEndRoleName="Filters"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1feb06b0-2bf8-4904-9ed6-ddd584aa2646"
+              LastKnownName="LogViewFilters"
+              LastKnownLocation="Package8_2355.uml" />
+            <description>Property Filters references type LogViewFilters.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="934f8413-19b2-45b6-9a91-e3220cb976d3"
+                  name="LogViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="dcecaf27-98d1-4a7a-a3a6-67efe7a0fe91"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="93c2c9a5-8ff0-44f3-b613-819217dba0ce"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a60086fb-2318-493c-b5ef-406032f2bc7c"
+                  name="Filters"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="21c86a4f-014e-4030-b85d-aa071d85a137"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c78ce690-dc1e-49cc-8974-4c806c4aafd4"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="9941befe-c7b4-4074-b527-bc15c9f3fb85"
+            name="Entries"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="9b265754-8ebf-48fb-95c3-6774dcfef67a"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DLogViewModel Member%3DEntries"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7476a1ce-fdd7-4c4c-ad4f-8d620303796f"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="478b6499-a0ff-4fbd-935a-1f25409d37d9">
+                    <propertyInstance
+                      Id="6242ca06-5869-43dc-91fa-4b8c478cac08"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e8aed02-14db-4e3f-8cb2-05974be5bfec">
+                    <propertyInstance
+                      Id="83bd8c6e-094e-4b30-ab32-13065ef03bf8"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="557581bc-3d1f-498c-807d-c35cd288c3bf">
+                    <propertyInstance
+                      Id="a4bfa38a-9ce5-43df-b396-e3b62df37c9e"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="efc9285b-1f1c-4932-97d4-653f277ce018">
+                    <propertyInstance
+                      Id="edae2d1b-acb1-489a-9198-5a4a97c8d429"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a6ad1ec4-dedc-4c0d-a4ad-55910a003923">
+                    <propertyInstance
+                      Id="e3a91264-d31d-4246-9db3-97b28a9da593"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3773ce8e-9968-4b93-ba26-573616bb3f16">
+                    <propertyInstance
+                      Id="02ed5b56-93f9-4863-85d5-944e94b5069c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58542772-48f4-4005-85b7-0d05bc697589">
+                    <propertyInstance
+                      Id="367993ad-2796-461a-99f5-8915e88a902d"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="84cb4a73-e1e2-47bc-b9c5-1b06422bf5e1"
+                LastKnownName="IPagedList&lt;LogItem‎&gt;"
+                LastKnownLocation="Package_2359.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2ed512c2-2b05-4d6b-ba4b-78540cfb93c6"
+            name="Filters"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6454e549-f5e0-4fa0-b0c8-309f6c3bcda1"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DLogViewModel Member%3DFilters"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9df5397f-6830-451c-a9d4-1a9c6e2d0313"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ae1ba83-0fc0-4d3f-9e7a-780385220b46">
+                    <propertyInstance
+                      Id="9b5411ed-5a07-427b-9f4f-870e025e744f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be89b370-033b-4dcc-8279-5de085293a81">
+                    <propertyInstance
+                      Id="1e5aeedd-a50c-45d4-9d98-99aaf38175e0"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbd0a4c2-7e07-4c70-877d-a0cc20b59e9a">
+                    <propertyInstance
+                      Id="0c45e28b-f7e1-444c-a28a-300746b9c07f"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e04f810-acf6-465d-8372-590de974a875">
+                    <propertyInstance
+                      Id="b7191f1c-aa84-4e3e-8876-08d40dba097e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bbabb99c-0458-4633-a18b-e64300eecac1">
+                    <propertyInstance
+                      Id="e36fe0f9-61d3-4011-a63b-5a4d62966cf6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="580032c1-adab-49c5-bfc4-966fdfd7ba30">
+                    <propertyInstance
+                      Id="f5f5512d-517d-45a2-8439-dbb99670288e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63ef975f-8b6a-4986-b50b-cc967cf809a3">
+                    <propertyInstance
+                      Id="bea0fef7-a0f0-4d64-b762-924a35d8c306"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="1feb06b0-2bf8-4904-9ed6-ddd584aa2646"
+                LastKnownName="LogViewFilters"
+                LastKnownLocation="Package8_2355.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="92df54cf-9115-4109-ad07-5bafc4fe3032"
+            name="_entries"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="10fa1693-b768-47fb-b11b-fcaef95f4ed5"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DLogViewModel Member%3D_entries"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0ee2a1af-9197-4c65-beca-c28d8b41560a"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c5e0223f-f72b-4406-8c48-20d55b678253">
+                    <propertyInstance
+                      Id="e43adb24-f3ee-4c6f-bd0c-1fe02a0265ea"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbeb28e3-9bde-432f-849f-1566041f74ae">
+                    <propertyInstance
+                      Id="a178ebbb-11fa-4e85-8686-b8d271e32bff"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8ddb026-2770-45fd-be67-258f9a20e3ab">
+                    <propertyInstance
+                      Id="256fd4fe-d259-4705-8d1f-f29600a9da7b"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf0d2168-6976-4195-8763-e6b1bc619433">
+                    <propertyInstance
+                      Id="97f47c04-6110-4e3c-916d-d3ac453ccb10"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e796302-32b3-4466-bc65-9efe9accd067">
+                    <propertyInstance
+                      Id="7afa009f-93f5-4f51-b22e-4d1dbac51204"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="84cb4a73-e1e2-47bc-b9c5-1b06422bf5e1"
+                LastKnownName="IPagedList&lt;LogItem‎&gt;"
+                LastKnownLocation="Package_2359.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="cbb46cd5-7e4a-47ae-b6f5-ec86b1fce2f0"
+            name="_filters"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="21bb7bb5-4f39-4276-a719-daf620a142ac"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DLogViewModel Member%3D_filters"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="857bc220-c21d-41e9-9b90-2d0023f9bd8f"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ddd47acf-92c7-4c21-90b0-ba0436a61a7b">
+                    <propertyInstance
+                      Id="350a08ff-d9f0-4ae6-9e2e-8e44c275d307"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51f7e5e4-8cc9-42aa-afb2-94879e19859a">
+                    <propertyInstance
+                      Id="4e3c3ae8-a4ac-4b06-b70b-1c3759fe7d0c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94fdcae9-94b7-4055-bf7c-43a7a9805714">
+                    <propertyInstance
+                      Id="f65883f3-ca2e-4606-bc84-96f241f29bdf"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0037eea9-25b7-4492-a0fd-dcf2fc717c88">
+                    <propertyInstance
+                      Id="84a07e47-c5c1-43b0-9995-527e6c8f90c1"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6365b87-16d0-478f-8d44-05c3772a43a9">
+                    <propertyInstance
+                      Id="5acbd32e-b8e0-49e5-bc7e-8fc31eafb180"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="1feb06b0-2bf8-4904-9ed6-ddd584aa2646"
+                LastKnownName="LogViewFilters"
+                LastKnownLocation="Package8_2355.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a7bf6123-a655-4eb4-9372-69ad6ce87f6b"
+            name="LogViewModel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="951fa3f9-c825-41e4-b1a4-4f11d004967f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DLogViewModel Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DLogViewFilters)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.Logger%2Fbin%2FDebug%2FBJ.MongoDB.Logger.dll Namespace%3DBJ.MongoDB.Logger Type%3DLogItem)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="86f198bf-9b53-429c-953f-a01505517257"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5c7d30d-329d-4075-8098-f6907db2e181">
+                    <propertyInstance
+                      Id="4e7ba71c-358c-43de-8185-20fba16cc5e5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="507be740-7a98-48a0-8093-1937aa3a8e4a">
+                    <propertyInstance
+                      Id="1039b023-5a98-4a8c-bb6e-84a58b818ed7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff6386ce-f84f-4944-a3de-f83d5e1d0656">
+                    <propertyInstance
+                      Id="8375e3b1-8065-4882-9f92-fdb0404beb9d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc3913da-197a-4e5f-ae8c-13558d8217f5">
+                    <propertyInstance
+                      Id="cf269922-5539-4273-af59-3278d52eb1d8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12f20176-b389-406d-93d8-b668df72e6e2">
+                    <propertyInstance
+                      Id="af412009-3df4-4b95-8b32-308914abbeef"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="115cd102-9fef-409e-bb84-7df6d95e4c77">
+                    <propertyInstance
+                      Id="d892cf16-8641-48c6-9837-917f008a981a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e6f85e76-67fa-4de5-abc3-00f821704d50"
+                  name="filters"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c8810f68-f2b1-47ff-92f8-da991827b58b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DLogViewModel Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DLogViewFilters)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.Logger%2Fbin%2FDebug%2FBJ.MongoDB.Logger.dll Namespace%3DBJ.MongoDB.Logger Type%3DLogItem)]))]) ParameterIdentifier%3Dfilters"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1feb06b0-2bf8-4904-9ed6-ddd584aa2646"
+                      LastKnownName="LogViewFilters"
+                      LastKnownLocation="Package8_2355.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="20d628f0-abac-4322-aaa3-eb6f4edf4891"
+                  name="entries"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d13fdd70-48bb-4378-9ca9-82c78fede14a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DLogViewModel Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DLogViewFilters)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.Logger%2Fbin%2FDebug%2FBJ.MongoDB.Logger.dll Namespace%3DBJ.MongoDB.Logger Type%3DLogItem)]))]) ParameterIdentifier%3Dentries"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="1d653fd8-a251-4c17-ac4b-2935eb05eafc"
+                      LastKnownName="IEnumerable&lt;LogItem‎&gt;"
+                      LastKnownLocation="Package7_2355.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1feb06b0-2bf8-4904-9ed6-ddd584aa2646"
+        name="LogViewFilters"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3663cf33-5740-424a-9f00-18d86ff90bb4"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DLogViewFilters"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="8937e093-559b-4397-b69a-6ebd9996614b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="21aba908-a45a-483f-9c44-d3050efe723a">
+                <propertyInstance
+                  Id="8b37ed13-6c62-4de8-af2c-424684227224"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="67328f87-f337-4921-bf22-72175915dcfa">
+                <propertyInstance
+                  Id="b12a608f-0e1f-49b1-8a1d-c8c2a718e3cf"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3d20726a-1831-4b16-97fc-4c84b73f4a2a">
+                <propertyInstance
+                  Id="7788d314-2b7f-4b0e-997a-c569e99ac166"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="178297e7-f884-4074-8dbe-3120288b73a6">
+                <propertyInstance
+                  Id="3e6ca6fd-4a84-44a2-b134-d1e4d521fde9"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="60cff068-ba64-4eba-90a0-3a0471b8a194">
+                <propertyInstance
+                  Id="2e844bc4-a91c-4008-9bd5-936e17f9230b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ea0bc152-c74f-4de2-9eca-f7fad4c0c3a6"
+        name="StatLevelItem"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="0ac25c1f-7a39-4215-8413-46d4493692b5"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FDistribs%2FDropbox%2FWork%2Fdevel%2Fdotnet%2FLib%2FMongoDB-Log%2FBJ.MongoDB.WebUI%2Fbin%2FBJ.MongoDB.WebUI.dll Namespace%3DBJ.MongoDB.WebUI.Models Type%3DStatLevelItem"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b8e4606e-41e6-45e5-8a48-cb14deddf0c4"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e5275f0d-fe76-468f-ad6f-df60a56f5a6e">
+                <propertyInstance
+                  Id="2e6d4ab5-1b8b-4a7c-860a-267c34ed24be"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2fcc6e0f-752e-4723-9fca-e96c706f9f3f">
+                <propertyInstance
+                  Id="27c46e00-0ba5-4324-a3be-a5522552cb29"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="05772a67-bc30-4ce7-acd1-5a444aeb4bfd">
+                <propertyInstance
+                  Id="3f36cafd-162d-4dfa-9370-246e3f764171"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f809ff5a-fe51-4267-9c4c-faf49f98fa49">
+                <propertyInstance
+                  Id="5cb20221-1506-4892-960a-6fd4ed1c0156"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5e6f5750-37c8-403b-9075-f47a9c6c0c60">
+                <propertyInstance
+                  Id="9e120616-77f0-408f-b210-58a831aaec16"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

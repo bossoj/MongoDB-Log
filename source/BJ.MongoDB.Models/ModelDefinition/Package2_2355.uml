@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="b04351b2-f975-4f8a-81a1-4a85d1694057"
+  name="WebUI"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="b970cd43-a88a-4ec3-89c7-cbda92411892"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DBJ.MongoDB.WebUI"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a08f5e44-091b-4933-814a-0014bedf368f"
+        LastKnownName="Classes"
+        LastKnownLocation="Package3_2355.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="697245cc-4081-4bcb-993e-14dfe1df2e2b"
+        LastKnownName="Models"
+        LastKnownLocation="Package8_2355.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1386a2ab-c0fb-4ed4-8ef1-ca2e8fc26f5c"
+        LastKnownName="Controllers"
+        LastKnownLocation="Package_0000.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
