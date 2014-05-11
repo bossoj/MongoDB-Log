@@ -9,6 +9,8 @@
 /source/TestResults/
 /publish/
 /publish.*
+/publish.zip
+/publish.rar
 
 # Managed by NuGet
 /lib/
